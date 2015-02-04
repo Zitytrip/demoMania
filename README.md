@@ -1,11 +1,13 @@
 # demoMania
+
 demos of a lot of different html client side and server side technologies
 
 SERVER SIDE:
 
-node.js
-
-mongodb
+* node.js
+* mongodb
+* yeoman (grunt bower yo)
+* .net wrapper
 
 
 CLIENT SIDE:
