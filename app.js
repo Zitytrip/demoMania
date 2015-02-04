@@ -26,6 +26,7 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-app.listen(3000);
-console.log("demoMania listening on port 3000");
+var port = 8000;
+app.listen(port);
+console.log("demoMania listening on port " + port);
 
