@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Twitter Bootstrap 3 Examples</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head> 
+<body>
+
+<H1>Twitter Bootstrap 3 GRID </H1>
+
+<ul>
+<li>12 Columns</li>
+<li>container -> row -> column</li>
+<li>containers: centered (horizontally) if screen is bigger (width depends on device resolution)</li>
+<li> <b>Screen Width Codes</b>
+ 	<ul>
+ 	 	<li>.col-xs- Extra Small (phones)</li>
+ 	 	<li>.col-sm- Small (tablets)</li>
+ 	 	<li>.col-md- Medium (Desktops)</li>
+ 	 	<li>.col-lg- Large (Desktops > 1200px</li>
+ 	</ul>
+</ul>
+
+
+<style type="text/css">
+    .bs-example{
+    	margin: 30px;  <!-- margin around the complete nav-bar -->
+    }
+  h2 {
+    border-bottom: thick dotted #ff0000;
+} 
+</style>
+
+<div id="mynav"></div>
+
+
+
+<div class="container"> 
+   <h2>Stacked to Horizontal (medium)</h2> 
+    <div class="row"> 
+ 
+      <div class="col-md-6"  style="background-color: #dedef8; box-shadow:  
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+            nisi ut aliquip ex ea commodo consequat.  
+         </p> 
+ 
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa  
+            quae ab illo inventore veritatis et quasi architecto beatae vitae  
+            dicta sunt explicabo.  
+         </p> 
+      </div> 
+ 
+      <div class="col-md-6" style="background-color: #dedef8;box-shadow:  
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+            accusantium doloremque laudantium. 
+         </p> 
+ 
+         <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,  
+            consectetur, adipisci velit, sed quia non numquam eius modi  
+            tempora incidunt ut labore et dolore magnam aliquam quaerat  
+            voluptatem.  
+         </p> 
+   </div> 
+</div>
+</div>
+
+
+<div class="container"> 
+   <h2>Stacked to Horizontal (small screen)</h2> 
+    <div class="row"> 
+ 
+      <div class="col-sm-6"  style="background-color: #dedef8; box-shadow:  
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+            nisi ut aliquip ex ea commodo consequat.  
+         </p> 
+ 
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa  
+            quae ab illo inventore veritatis et quasi architecto beatae vitae  
+            dicta sunt explicabo.  
+         </p> 
+      </div> 
+ 
+      <div class="col-sm-6" style="background-color: #dedef8;box-shadow:  
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+            accusantium doloremque laudantium. 
+         </p> 
+ 
+         <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,  
+            consectetur, adipisci velit, sed quia non numquam eius modi  
+            tempora incidunt ut labore et dolore magnam aliquam quaerat  
+            voluptatem.  
+         </p> 
+   </div> 
+</div>
+</div>
+
+
+<div class="container"> 
+   <h2>Different Layout for Medium and Large Screens (2:1 vs 1:1)</h2> 
+ 
+   <div class="row"> 
+ 
+      <div class="col-md-6 col-lg-4"  style="background-color: #dedef8;  
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+            nisi ut aliquip ex ea commodo consequat.  
+         </p> 
+ 
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa  
+            quae ab illo inventore veritatis et quasi architecto beatae vitae  
+            dicta sunt explicabo.  
+         </p> 
+      </div> 
+ 
+      <div class="col-md-6 col-lg-8"" style="background-color: #dedef8; 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+            accusantium doloremque laudantium. 
+         </p> 
+ 
+         <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,  
+            consectetur, adipisci velit, sed quia non numquam eius modi  
+            tempora incidunt ut labore et dolore magnam aliquam quaerat  
+            voluptatem.  
+         </p> 
+   </div> 
+</div> 
+</div>
+
+
+<div class="container"> 
+   <h2>3 Sizes: Mobile, Tablet, Desktop (left column grows with screen size)</h2> 
+ 
+   <div class="row"> 
+ 
+      <div class="col-sm-3 col-md-6 col-lg-8"   
+         style="background-color: #dedef8;  
+         box-shadow: inset 1px -1px 1px #444,  
+         inset -1px 1px 1px #444;"> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+            nisi ut aliquip ex ea commodo consequat.  
+         </p> 
+ 
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa  
+            quae ab illo inventore veritatis et quasi architecto beatae vitae  
+            dicta sunt explicabo.  
+         </p> 
+      </div> 
+ 
+      <div class="col-sm-9 col-md-6 col-lg-4"  
+         style="background-color: #dedef8; 
+         box-shadow: inset 1px -1px 1px #444,  
+         inset -1px 1px 1px #444;"> 
+         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+            accusantium doloremque laudantium. 
+         </p> 
+ 
+         <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,  
+            consectetur, adipisci velit, sed quia non numquam eius modi  
+            tempora incidunt ut labore et dolore magnam aliquam quaerat  
+            voluptatem.  
+         </p> 
+   </div> 
+</div> 
+
+<h2>clearfix (removes the float from an element)</h2>
+<div class="container"> 
+   <div class="row" > 
+      <div class="col-xs-6 col-sm-3"  
+         style="background-color: green; 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+      </div> 
+      <div class="col-xs-6 col-sm-3"  
+         style="background-color: green;box-shadow:  
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris  
+            nisi ut aliquip ex ea commodo consequat. 
+         </p> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  
+            eiusmod tempor incididunt ut.  
+         </p> 
+      </div> 
+ 
+      <div class="clearfix visible-xs"></div> 
+ 
+      <div class="col-xs-6 col-sm-3"  
+         style="background-color: #dedef8; 
+         box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco  
+            laboris nisi ut aliquip ex ea commodo consequat.  
+         </p> 
+      </div> 
+      <div class="col-xs-6 col-sm-3"  
+         style="background-color: #dedef8;box-shadow:  
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  
+            enim ad minim  
+         </p> 
+      </div> 
+   </div> 
+</div> 
+
+
+
+<div class="container"> 
+ 
+   <h2>Offset (left orientation; on big screens put 6 cols on left to center)</h2> 
+	<div class="row" > 
+      <div class="col-xs-6 col-md-offset-3"  
+         style="background-color: #dedef8;box-shadow:  
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing  
+            elit. 
+         </p> 
+      </div> 
+ 
+   </div> 
+</div>
+
+
+
+
+
+
+<div class="container"> 
+ 
+   <h2>Nested columns!</h2> 
+ 
+   <div class="row"> 
+ 
+      <div class="col-md-3" style="background-color: #dedef8;box-shadow:  
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <h4>First Column</h4> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+      </div> 
+ 
+      <div class="col-md-9" style="background-color: #dedef8;box-shadow:  
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <h4>Second Column- Split into 4 boxes</h4> 
+         <div class="row"> 
+            <div class="col-md-6" style="background-color: #B18904; 
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+               <p>Consectetur art party Tonx culpa semiotics. Pinterest  
+                  assumenda minim organic quis. 
+               </p> 
+            </div> 
+            <div class="col-md-6" style="background-color: #B18904; 
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+               <p> sed do eiusmod tempor incididunt ut labore et dolore magna  
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation  
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+               </p> 
+            </div> 
+         </div> 
+ 
+         <div class="row"> 
+            <div class="col-md-6" style="background-color: #B18904; 
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+               <p>quis nostrud exercitation ullamco laboris nisi ut  
+                  aliquip ex ea commodo consequat. 
+               </p> 
+            </div>    
+            <div class="col-md-6" style="background-color: #B18904; 
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  
+                  sed do eiusmod tempor incididunt ut labore et dolore magna  
+                  aliqua. Ut enim ad minim.</p> 
+            </div> 
+         </div> 
+ 
+      </div> 
+ 
+   </div> 
+ 
+</div> 
+
+<h2>visibility depending on the screen size</h2>
+<p> look for the "Visible on" text in front of the size text</p>
+<div class="container" style="padding: 40px;"> 
+  <div class="row visible-on">  
+     <span class="visible-xs"> <p>Welcome Xtra Small!</p></span>
+	</div>
+   <div class="row visible-on"> 
+      <div class="col-xs-6 col-sm-3" style="background-color: #dedef8; 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <span class="hidden-xs">Extra small</span> 
+         <span class="visible-xs">? Visible on x-small</span> 
+      </div> 
+      <div class="col-xs-6 col-sm-3" style="background-color: #dedef8; 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <span class="hidden-sm">Small</span> 
+         <span class="visible-sm">? Visible on small</span> 
+      </div> 
+      <div class="clearfix visible-xs"></div> 
+      <div class="col-xs-6 col-sm-3" style="background-color: #dedef8; 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <span class="hidden-md">Medium</span> 
+         <span class="visible-md">? Visible on medium</span> 
+      </div> 
+      <div class="col-xs-6 col-sm-3" style="background-color: #dedef8; 
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"> 
+         <span class="hidden-lg">Large</span> 
+         <span class="visible-lg">? Visible on large</span> 
+      </div> 
+</div> 
+</div> 
+
+
+
+</body>
+</html> 

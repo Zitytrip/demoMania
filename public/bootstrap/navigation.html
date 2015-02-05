@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Twitter Bootstrap 3 Examples</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head> 
+<body>
+
+<H1>Twitter Bootstrap 3 NAVIGATION and "Content Areas" </H1>
+
+<style type="text/css">
+    .bs-example{
+    	margin: 30px;  <!-- margin around the complete nav-bar -->
+    }
+ h2 {
+    border-bottom: thick dotted #ff0000;
+} 
+</style>
+
+<div id="mynav"></div>
+<h2>NAV - STATIC TOP</h2>
+<nav class="navbar navbar-default navbar-static-top" role="navigation"> 
+   <div class="navbar-header"> 
+      <a class="navbar-brand" href="#">TutorialsPoint</a> 
+   </div> 
+   <div> 
+      <ul class="nav navbar-nav"> 
+         <li class="active"><a href="#">iOS</a></li> 
+         <li><a href="#">SVN</a></li> 
+         <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+               Java <b class="caret"></b> 
+            </a> 
+            <ul class="dropdown-menu"> 
+               <li><a href="#">jmeter</a></li> 
+               <li><a href="#">EJB</a></li> 
+               <li><a href="#">Jasper Report</a></li> 
+               <li class="divider"></li> 
+               <li><a href="#">Separated link</a></li> 
+               <li class="divider"></li> 
+               <li><a href="#">One more separated link</a></li> 
+            </ul> 
+         </li> 
+      </ul> 
+   </div> 
+</nav> 
+
+<h2>NAV BAR responsive</h2>
+<p> change browser width, and notice how it changes as well </p>
+
+<div class="bs-example">
+    <nav role="navigation" class="navbar navbar-default">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Brand</a>
+        </div>
+
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">  Profile  </a></li>
+                <li><a href="#myfooter">  Footer  </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</div>
+
+<h2>navbar-fixed-top (always top)</h2>
+<p>look at the top of this page ;-)</p>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+   <div class="navbar-header"> 
+      <a class="navbar-brand" href="#">Bootstrap3 NAVigation</a> 
+   </div> 
+   <div> 
+      <ul class="nav navbar-nav"> 
+         <li><a href="#mynav">NAV (Bar)</a></li>
+	    <li><a href="#mydropdown">Dropdown Menu</a></li>
+	    <li><a href="#mytabs">TABs</a></li>
+	    <li><a href="#mypills">PILLs</a></li>
+	    <li><a href="#mytable">Table</a></li>
+	    <li><a href="#mypanel">Panel</a></li>
+	    <li><a href="#mylistgroup">list group</a></li>
+      </ul> 
+   </div> 
+</nav>
+
+
+
+
+
+<h2>navbar-fixed-bottom (always bottom)</h2>
+<p> look at the bottom of this page ;-) </p>
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation"> 
+   <div class="navbar-header"> 
+      <a class="navbar-brand" href="#">TutorialsPoint</a> 
+   </div> 
+   <div> 
+      <ul class="nav navbar-nav"> 
+         <li class="active"><a href="#">iOS</a></li> 
+         <li><a href="#">SVN</a></li> 
+         <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+               Java <b class="caret"></b> 
+            </a> 
+            <ul class="dropdown-menu"> 
+               <li><a href="#">jmeter</a></li> 
+               <li><a href="#">EJB</a></li> 
+               <li><a href="#">Jasper Report</a></li> 
+               <li class="divider"></li> 
+               <li><a href="#">Separated link</a></li> 
+               <li class="divider"></li> 
+               <li><a href="#">One more separated link</a></li> 
+            </ul> 
+         </li> 
+      </ul> 
+   </div> 
+</nav> 
+
+<h2>Form Elements in NAV bar</h2>
+
+<nav class="navbar navbar-default" role="navigation"> 
+   <div class="navbar-header"> 
+      <a class="navbar-brand" href="#">TutorialsPoint</a> 
+   </div> 
+   <div> 
+      <form class="navbar-form navbar-left" role="search"> 
+         <div class="form-group"> 
+            <input type="text" class="form-control" placeholder="Search"> 
+         </div> 
+         <button type="submit" class="btn btn-default">Submit</button> 
+      </form>     
+   </div> 
+</nav> 
+
+<h2>Non NAV links</h2>
+<div class=bs-example>
+<nav class="navbar navbar-default" role="navigation" class="bs-example"> 
+   <div class="navbar-header"> 
+      <a class="navbar-brand" href="#">TutorialsPoint</a> 
+   </div> 
+   <div> 
+      <p class="navbar-text navbar-right">Signed in as  
+         <a href="#" class="navbar-link">Thomas</a> 
+      </p> 
+   </div> 
+</div> 
+</div> 
+</nav> 
+
+
+<div id="mydropdown"></div>
+<h2>Dropdown Menu</h2>
+<div class="dropdown"> 
+   <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"  
+      data-toggle="dropdown"> 
+      Topics 
+      <span class="caret"></span> 
+   </button> 
+   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
+      <li role="presentation"> 
+         <a role="menuitem" tabindex="-1" href="#">Java</a> 
+      </li> 
+      <li role="presentation"> 
+         <a role="menuitem" tabindex="-1" href="#">Data Mining</a> 
+      </li> 
+      <li role="presentation"> 
+         <a role="menuitem" tabindex="-1" href="#"> 
+            Data Communication/Networking 
+         </a> 
+      </li> 
+      <li role="presentation" class="divider"></li> 
+      <li role="presentation"> 
+         <a role="menuitem" tabindex="-1" href="#">Separated link</a> 
+      </li> 
+   </ul> 
+</div> 
+
+<div id="mytabs"></div>
+<h2>Tabs</h2> 
+<ul class="nav nav-tabs"> 
+   <li class="active"><a href="#">Home</a></li> 
+   <li><a href="#">SVN</a></li> 
+   <li><a href="#">iOS</a></li> 
+   <li><a href="#">VB.Net</a></li> 
+   <li><a href="#">Java</a></li> 
+   <li><a href="#">PHP</a></li> 
+</ul> 
+
+<h2>Tabs With Dropdown Example</h2> 
+<ul class="nav nav-tabs"> 
+   <li class="active"><a href="#">Home</a></li> 
+   <li><a href="#">SVN</a></li> 
+   <li><a href="#">iOS</a></li> 
+   <li><a href="#">VB.Net</a></li> 
+   <li class="dropdown"> 
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
+         Java <span class="caret"></span> 
+      </a> 
+      <ul class="dropdown-menu"> 
+         <li><a href="#">Swing</a></li> 
+         <li><a href="#">jMeter</a></li> 
+         <li><a href="#">EJB</a></li> 
+         <li class="divider"></li> 
+         <li><a href="#">Separated link</a></li> 
+      </ul> 
+   </li> 
+   <li><a href="#">PHP</a></li> 
+</ul> 
+
+<h2>Justified TABS (responsive)</h2> 
+<ul class="nav nav-tabs nav-justified"> 
+   <li class="active"><a href="#">Home</a></li> 
+   <li><a href="#">SVN</a></li> 
+   <li><a href="#">iOS</a></li> 
+   <li><a href="#">VB.Net</a></li> 
+   <li><a href="#">Java</a></li> 
+   <li><a href="#">PHP</a></li> 
+</ul> 
+
+
+
+<h2>Tabs (with linking)</h2>
+<hr> 
+   <p class="active-tab"><strong>Active Tab</strong>: <span></span></p> 
+   <p class="previous-tab"><strong>Previous Tab</strong>: <span></span></p> 
+<hr> 
+<ul id="myTab" class="nav nav-tabs"> 
+   <li class="active"><a href="#home" data-toggle="tab"> 
+      Tutorial Point Home</a></li> 
+   <li><a href="#ios" data-toggle="tab">iOS</a></li> 
+   <li class="dropdown"> 
+      <a href="#" id="myTabDrop1" class="dropdown-toggle"  
+         data-toggle="dropdown"> 
+         Java <b class="caret"></b></a> 
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1"> 
+         <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></l
+         <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li> 
+      </ul> 
+   </li> 
+</ul> 
+<div id="myTabContent" class="tab-content"> 
+   <div class="tab-pane fade in active" id="home"> 
+      <p>Tutorials Point is a place for beginners in all technical areas.  
+         This website covers most of the latest technoligies and explains  
+         each of the technology with simple examples. You also have a  
+         <b>tryit</b> editor, wherein you can edit your code and  
+         try out different possibilities of the examples.</p> 
+   </div> 
+   <div class="tab-pane fade" id="ios"> 
+      <p>iOS is a mobile operating system developed and distributed by Apple 
+         Inc. Originally released in 2007 for the iPhone, iPod Touch, and  
+         Apple TV. iOS is derived from OS X, with which it shares the  
+         Darwin foundation. iOS is Apple's mobile version of the  
+         OS X operating system used on Apple computers.</p> 
+   </div> 
+   <div class="tab-pane fade" id="jmeter"> 
+      <p>jMeter is an Open Source testing software. It is 100% pure  
+      Java application for load and performance testing.</p> 
+   </div> 
+   <div class="tab-pane fade" id="ejb"> 
+      <p>Enterprise Java Beans (EJB) is a development architecture  
+         for building highly scalable and robust enterprise level     
+         applications to be deployed on J2EE compliant  
+         Application Server such as JBOSS, Web Logic etc. 
+      </p> 
+   </div> 
+</div> 
+<script> 
+   $(function(){ 
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) { 
+      // Get the name of active tab 
+      var activeTab = $(e.target).text();  
+      // Get the name of previous tab 
+      var previousTab = $(e.relatedTarget).text();  
+      $(".active-tab span").html(activeTab); 
+      $(".previous-tab span").html(previousTab); 
+   }); 
+}); 
+</script> 
+
+
+
+
+
+<div id="mypills"></div>
+<h2>PILLS</h2> 
+<ul class="nav nav-pills"> 
+   <li class="active"><a href="#">Home</a></li> 
+   <li><a href="#">SVN</a></li> 
+   <li><a href="#">iOS</a></li> 
+   <li><a href="#">VB.Net</a></li> 
+   <li><a href="#">Java</a></li> 
+   <li><a href="#">PHP</a></li> 
+</ul> 
+
+<h2>Vertical Pills Example</h2> 
+<ul class="nav nav-pills nav-stacked"> 
+   <li class="active"><a href="#">Home</a></li> 
+   <li><a href="#">SVN</a></li> 
+   <li><a href="#">iOS</a></li> 
+   <li><a href="#">VB.Net</a></li> 
+   <li><a href="#">Java</a></li> 
+   <li><a href="#">PHP</a></li> 
+</ul> 
+
+<h2>Justified Pills (responsive)</h2> 
+<ul class="nav nav-pills nav-justified"> 
+   <li class="active"><a href="#">Home</a></li> 
+   <li><a href="#">SVN</a></li> 
+   <li><a href="#">iOS</a></li> 
+   <li><a href="#">VB.Net</a></li> 
+   <li><a href="#">Java</a></li> 
+   <li><a href="#">PHP</a></li> 
+</ul><br><br><br> 
+
+
+<div id="mytable"></div>
+<h2>Table</h2> 
+
+<table class="table table-striped"> 
+   <caption>Striped Table Layout</caption> 
+   <thead> 
+      <tr> 
+         <th>Name</th> 
+         <th>City</th> 
+         <th>Pincode</th> 
+      </tr> 
+   </thead> 
+   <tbody> 
+      <tr> 
+         <td>Tanmay</td> 
+         <td>Bangalore</td> 
+         <td>560001</td> 
+      </tr> 
+      <tr> 
+         <td>Sachin</td> 
+         <td>Mumbai</td> 
+         <td>400003</td> 
+      </tr> 
+      <tr> 
+         <td>Uma</td> 
+         <td>Pune</td> 
+         <td>411027</td> 
+      </tr> 
+   </tbody> 
+</table> 
+
+<table class="table table-bordered"> 
+   <caption>Bordered Table Layout</caption> 
+   <thead> 
+      <tr> 
+         <th>Name</th> 
+         <th>City</th> 
+         <th>Pincode</th> 
+      </tr> 
+   </thead> 
+   <tbody> 
+      <tr> 
+         <td>Tanmay</td> 
+         <td>Bangalore</td> 
+         <td>560001</td> 
+      </tr> 
+      <tr> 
+         <td>Sachin</td> 
+         <td>Mumbai</td> 
+         <td>400003</td> 
+      </tr> 
+      <tr> 
+         <td>Uma</td> 
+         <td>Pune</td> 
+         <td>411027</td> 
+      </tr> 
+   </tbody> 
+</table> 
+
+
+<table class="table table-hover"> 
+   <caption>Hover Table Layout</caption> 
+   <thead> 
+      <tr> 
+         <th>Name</th> 
+         <th>City</th> 
+         <th>Pincode</th> 
+      </tr> 
+   </thead> 
+   <tbody> 
+      <tr> 
+         <td>Tanmay</td> 
+         <td>Bangalore</td> 
+         <td>560001</td> 
+      </tr> 
+      <tr> 
+         <td>Sachin</td> 
+         <td>Mumbai</td> 
+         <td>400003</td> 
+      </tr> 
+      <tr> 
+         <td>Uma</td> 
+         <td>Pune</td> 
+         <td>411027</td> 
+      </tr> 
+   </tbody> 
+</table> 
+
+<table class="table table-condensed"> 
+   <caption>Condensed Table Layout</caption> 
+   <thead> 
+      <tr> 
+         <th>Name</th> 
+         <th>City</th> 
+         <th>Pincode</th> 
+      </tr> 
+   </thead> 
+   <tbody> 
+      <tr> 
+         <td>Tanmay</td> 
+         <td>Bangalore</td> 
+         <td>560001</td> 
+      </tr> 
+      <tr> 
+         <td>Sachin</td> 
+         <td>Mumbai</td> 
+         <td>400003</td> 
+      </tr> 
+      <tr> 
+         <td>Uma</td> 
+         <td>Pune</td> 
+         <td>411027</td> 
+      </tr> 
+   </tbody> 
+</table> 
+
+table class="table"> 
+   <caption>Contextual Table Layout</caption> 
+   <thead> 
+      <tr> 
+         <th>Product</th> 
+         <th>Payment Date</th> 
+         <th>Status</th> 
+      </tr> 
+   </thead> 
+   <tbody> 
+      <tr class="active"> 
+         <td>Product1</td> 
+         <td>23/11/2013</td> 
+         <td>Pending</td> 
+      </tr> 
+      <tr class="success"> 
+         <td>Product2</td> 
+         <td>10/11/2013</td> 
+         <td>Delivered</td> 
+      </tr> 
+      <tr  class="warning"> 
+         <td>Product3</td> 
+         <td>20/10/2013</td> 
+         <td>In Call to confirm</td> 
+      </tr> 
+      <tr  class="danger"> 
+         <td>Product4</td> 
+         <td>20/10/2013</td> 
+         <td>Declined</td> 
+      </tr> 
+   </tbody> 
+</table>   
+
+
+<div class="table-responsive"> 
+   <table class="table"> 
+      <caption>Responsive Table Layout</caption> 
+      <thead> 
+         <tr> 
+            <th>Product</th> 
+            <th>Payment Date</th> 
+            <th>Status</th> 
+         </tr> 
+      </thead> 
+      <tbody> 
+         <tr> 
+            <td>Product1</td> 
+            <td>23/11/2013</td> 
+            <td>Pending</td> 
+         </tr> 
+         <tr> 
+            <td>Product2</td> 
+            <td>10/11/2013</td> 
+            <td>Delivered</td> 
+         </tr> 
+         <tr> 
+            <td>Product3</td> 
+            <td>20/10/2013</td> 
+            <td>In Call to confirm</td> 
+         </tr> 
+         <tr> 
+            <td>Product4</td> 
+            <td>20/10/2013</td> 
+            <td>Declined</td> 
+         </tr> 
+      </tbody> 
+   </table> 
+</div>   
+
+<div id="mypanel"></div>
+
+<h2>panel</h2> 
+<div class="panel panel-default"> 
+   <div class="panel-heading"> 
+      <h3 class="panel-title"> 
+         Panel With title 
+      </h3> 
+   </div> 
+   <div class="panel-body"> 
+      Panel content 
+   </div> 
+</div> 
+<div class="well">Hi, am in well !! (wells appear inset)</div> 
+
+
+
+
+<div id="mylistgroup"></div>
+<h2>list group (with badges)</h2>
+<ul class="list-group"> 
+   <li class="list-group-item">Free Domain Name Registration</li> 
+ <li class="list-group-item">Free Window Space hosting</li> 
+   <li class="list-group-item">Number of Images</li> 
+   <li class="list-group-item"> 
+      <span class="badge">New</span> 
+      24*7 support 
+   </li> 
+   <li class="list-group-item">Renewal cost per year</li> 
+   <li class="list-group-item"> 
+      <span class="badge">New</span> 
+      Disocunt Offer 
+   </li> 
+</ul>
+
+
+
+<p id="myfooter">Ok, here it ends</p>
+
+
+</body>
+</html> 

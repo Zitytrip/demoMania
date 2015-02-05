@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Twitter Bootstrap 3 User Interaction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head> 
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+   <div class="navbar-header"> 
+      <a class="navbar-brand" href="#">Bootstrap3 - User Interactions</a> 
+   </div> 
+   <div> 
+      <ul class="nav navbar-nav"> 
+         
+	    <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+               Alert Users <b class="caret"></b> 
+            </a> 
+            <ul class="dropdown-menu"> 
+		    <li><a href="#mytooltip">ToolTips</a></li>
+    		    <li><a href="#mypopover">Popover</a></li>
+		    <li><a href="#myalert">Alerts</a></li>
+               <li class="divider"></li> 
+		    <li><a href="#mydialog">(modal) dialog</a></li>
+            </ul> 
+         </li> 
+
+	    <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+               Controls <b class="caret"></b> 
+            </a> 
+            <ul class="dropdown-menu"> 
+		    <li><a href="#mylabels">labels</a></li>
+		    <li><a href="#mybadges">Badges</a></li>
+		    <li><a href="#myglyph">Glyph icons</a></li>
+		    <li><a href="#myprogressbar">progress bar</a></li>
+		    <li><a href="#myhidden">Hidden and Show attribute</a></li>
+		    <li><a href="#myradiobutton">radio button group</a></li>
+		    <li><a href="#mypagination">Pagination</a></li>
+		    <li><a href="#mybutton">Buttons</a></li>
+		    <li><a href="#mybreadcrumbs">Breadcrumbs</a></li>
+            </ul> 
+         </li> 
+
+	   <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+               Other <b class="caret"></b> 
+            </a> 
+            <ul class="dropdown-menu"> 
+			<li><a href="#myjumbotron">jumbotron</a></li>
+			<li><a href="#mythumbnail">thumbnail</a></li>
+			<li><a href="#myform">Form layout</a></li>
+            </ul> 
+         </li> 
+
+      </ul> 
+   </div> 
+</nav>
+
+
+
+<style type="text/css">
+   h2 {
+    border-bottom: thick dotted #ff0000;
+   } 
+   h1 {
+    color: blue;
+    border-bottom: thick solid blue;
+
+   } 
+
+</style>
+
+
+
+<h1> ALERT USERS </h1>
+
+<div id="mytooltip"></div>
+<h2>Tooltips</h2> 
+This is a <a href="#" class="tooltip-show" data-toggle="tooltip" title="Default Tooltip">Default Tooltip </a>. 
+<script> 
+$(function () { $('.tooltip-show').tooltip('show');}); 
+$(function () { $('.tooltip-show').on('show.bs.tooltip', function () { 
+   alert("Alert message on show"); 
+})}); 
+</script> 
+
+<h4>Tooltip examples for anchors</h4> 
+This is a <a href="#" class="tooltip-test" data-toggle="tooltip"  
+   title="Tooltip on left"> 
+   Default Tooltip 
+</a>. 
+This is a <a href="#" class="tooltip-test" data-toggle="tooltip"  
+   data-placement="left" title="Tooltip on left"> 
+   Tooltip on Left 
+</a>. 
+This is a <a href="#" data-toggle="tooltip" data-placement="top"  
+   title="Tooltip on top"> 
+   Tooltip on Top 
+</a>. 
+This is a <a href="#" data-toggle="tooltip" data-placement="bottom"  
+   title="Tooltip on bottom"> 
+   Tooltip on Bottom 
+</a>. 
+This is a <a href="#" data-toggle="tooltip" data-placement="right"  
+   title="Tooltip on right"> 
+   Tooltip on Right 
+</a> 
+ 
+<br> 
+ 
+<h4>Tooltip examples for buttons</h4> 
+<button type="button" class="btn btn-default" data-toggle="tooltip"  
+   title="Tooltip on left"> 
+   Default Tooltip 
+</button> 
+<button type="button" class="btn btn-default" data-toggle="tooltip"  
+   data-placement="left" title="Tooltip on left"> 
+   Tooltip on left 
+</button> 
+<button type="button" class="btn btn-default" data-toggle="tooltip"  
+   data-placement="top" title="Tooltip on top"> 
+   Tooltip on top 
+</button> 
+<button type="button" class="btn btn-default" data-toggle="tooltip"  
+   data-placement="bottom" title="Tooltip on bottom"> 
+   Tooltip on bottom 
+</button> 
+<button type="button" class="btn btn-default" data-toggle="tooltip"  
+   data-placement="right" title="Tooltip on right"> 
+   Tooltip on right 
+</button> 
+<script> 
+   $(function () { $("[data-toggle='tooltip']").tooltip(); }); 
+</script> 
+
+
+
+<div id="mypopover"></div>
+<h2>Popover (Pops on click)</h2> 
+<div class="container" style="padding: 10px 50px 10px;" > 
+   <button type="button" class="btn btn-default" title="Popover title"   
+      data-container="body" data-toggle="popover" data-placement="left"  
+      data-content="Some content in Popover on left"> 
+      Popover on left 
+   </button> 
+   <button type="button" class="btn btn-primary" title="Popover title"   
+      data-container="body" data-toggle="popover" data-placement="top"  
+      data-content="Some content in Popover on top"> 
+      Popover on top 
+   </button> 
+   <button type="button" class="btn btn-success" title="Popover title"   
+      data-container="body" data-toggle="popover" data-placement="bottom"  
+      data-content="Some content in Popover on bottom"> 
+      Popover on bottom 
+   </button> 
+   <button type="button" class="btn btn-warning" title="Popover title"   
+      data-container="body" data-toggle="popover" data-placement="right"  
+      data-content="Some content in Popover on right"> 
+      Popover on right 
+   </button> 
+   </div> 
+ 
+   <script>$(function ()  
+      { $("[data-toggle='popover']").popover(); 
+      }); 
+   </script> 
+</div> 
+
+<div id="myalert"></div>
+<h2>Alerts</h2> 
+<div class="alert alert-warning">Warning ! Dont submit this. (not dismissable)</div> 
+
+<div class="alert alert-success"> 
+   <a href="#" class="close" data-dismiss="alert"> 
+      &times; 
+   </a> 
+   <strong>Warning!</strong> There was a problem with your network connection. 
+</div> 
+
+<div id="mydialog"></div>
+<h2>Dialog (Modal)</h2> 
+<!-- Button trigger modal --> 
+<button class="btn btn-primary btn-lg" data-toggle="modal"  data-target="#myModal1">  Launch demo modal </button> 
+<!-- Modal --> 
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog aria-labelledby="myModalLabel" aria-hidden="true"> 
+   <div class="modal-dialog"> 
+      <div class="modal-content"> 
+         <div class="modal-header"> 
+            <button type="button" class="close"  
+               data-dismiss="modal" aria-hidden="true"> 
+                  &times; 
+            </button> 
+            <h4 class="modal-title" id="myModalLabel"> This Modal title  </h4> 
+         </div> 
+         <div class="modal-body"> Add some text here  </div> 
+         <div class="modal-footer"> 
+            <button type="button" class="btn btn-default"  
+               data-dismiss="modal">Close 
+            </button> 
+            <button type="button" class="btn btn-primary"> 
+               Submit changes 
+            </button> 
+         </div> 
+      </div><!-- /.modal-content --> 
+</div><!-- /.modal --> 
+</div>
+
+
+<h1>Controls</h1>
+
+
+<div id="mylabels"></div>
+<h2>labels</h2> 
+<span class="label label-default">Default Label</span> 
+<span class="label label-primary">Primary Label</span> 
+<span class="label label-success">Success Label</span> 
+<span class="label label-info">Info Label</span> 
+<span class="label label-warning">Warning Label</span> 
+<span class="label label-danger">Danger Label</span> 
+
+<div id="mybadges"></div>
+<h2>Badges</h2>
+<a href="#">Mailbox <span class="badge">50</span></a> 
+<h4>Example for Active State in Pill </h4> 
+<ul class="nav nav-pills"> 
+   <li class="active"><a href="#">Home <span class="badge">42</span></a></li> 
+   <li><a href="#">Profile</a></li> 
+   <li><a href="#">Messages <span class="badge">3</span></a></li> 
+</ul> 
+<br> 
+<h4>Example for Active State in navigations</h4> 
+<ul class="nav nav-pills nav-stacked" style="max-width: 260px;"> 
+   <li class="active"> 
+      <a href="#"> 
+         <span class="badge pull-right">42</span> 
+         Home 
+      </a> 
+   </li> 
+   <li><a href="#">Profile</a></li> 
+   <li> 
+      <a href="#"> 
+         <span class="badge pull-right">3</span> 
+         Messages 
+      </a> 
+   </li> 
+</ul> 
+
+<div id="myglyph"></div>
+<h2>glyph icons (google for all names)</h2>
+glyph icon without anything:<span class="glyphicon glyphicon-search"></span> 
+<p> 
+   <button type="button" class="btn btn-default"> 
+      <span class="glyphicon glyphicon-sort-by-attributes"></span> 
+   </button> 
+   <button type="button" class="btn btn-default"> 
+      <span class="glyphicon glyphicon-sort-by-attributes-alt"></span> 
+   </button> 
+   <button type="button" class="btn btn-default"> 
+      <span class="glyphicon glyphicon-sort-by-order"></span> 
+   </button> 
+   <button type="button" class="btn btn-default"> 
+      <span class="glyphicon glyphicon-sort-by-order-alt"></span> 
+   </button> 
+</p> 
+<button type="button" class="btn btn-default btn-lg"> 
+  <span class="glyphicon glyphicon-user"></span> User 
+</button> 
+<button type="button" class="btn btn-default btn-sm"> 
+  <span class="glyphicon glyphicon-user"></span> User 
+</button> 
+<button type="button" class="btn btn-default btn-xs"> 
+  <span class="glyphicon glyphicon-user"></span> User 
+</button> 
+
+
+
+<div id="myprogressbar"></div>
+<h2>progress bar</h2>
+<div class="progress"> 
+   <div class="progress-bar" role="progressbar" aria-valuenow="60"  
+      aria-valuemin="0" aria-valuemax="100" style="width: 40%;"> 
+      <span class="sr-only">40% Complete</span> 
+   </div> 
+</div> 
+
+
+<div id="myhidden"></div>
+<h2>hidden and show attributes</h2>
+<div class="row" style="padding: 91px 100px 19px 50px;"> 
+   <div class="show" style="left-margin:10px;width:300px;background-color:#ccc;"> 
+      This is an example for show class 
+   </div> 
+   <div class="hidden" style="width:200px;background-color:#ccc;"> 
+      This is an example for hide class 
+   </div> 
+</div> 
+
+
+
+
+<div id="myradiobutton"></div>
+<h2>radiobutton / checkbox group</h2>
+<div class="btn-group" data-toggle="buttons"> 
+   <label class="btn btn-primary"> 
+      <input type="radio" name="options99" id="option1"> Option 1 
+   </label> 
+   <label class="btn btn-primary"> 
+      <input type="radio" name="options99" id="option2"> Option 2 
+   </label> 
+   <label class="btn btn-primary"> 
+      <input type="radio" name="options99" id="option3"> Option 3 
+   </label> 
+</div>   
+
+<div class="btn-group" data-toggle="buttons"> 
+   <label class="btn btn-primary"> 
+      <input type="checkbox"> Option 1 
+   </label> 
+   <label class="btn btn-primary"> 
+      <input type="checkbox"> Option 2 
+   </label> 
+   <label class="btn btn-primary"> 
+      <input type="checkbox"> Option 3 
+   </label> 
+</div> 
+
+
+
+<div id="mybreadcrumbs"></div>
+<h2>breadcrumbs (hieararchy in one line)</h2> 
+<ol class="breadcrumb"> 
+  <li><a href="#">Home</a></li> 
+  <li><a href="#">2013</a></li> 
+  <li class="active">November</li> 
+</ol> 
+
+
+
+
+
+<div id="mypagination"></div>
+<h2>pagination - pager</h2> 
+<ul class="pagination"> 
+  <li><a href="#">&laquo;</a></li> 
+  <li><a href="#">1</a></li> 
+  <li><a href="#">2</a></li> 
+  <li><a href="#">3</a></li> 
+  <li><a href="#">4</a></li> 
+  <li><a href="#">5</a></li> 
+  <li><a href="#">&raquo;</a></li> 
+</ul> 
+
+<ul class="pager"> 
+  <li><a href="#">Previous</a></li> 
+  <li><a href="#">Next</a></li> 
+</ul> 
+
+
+
+<div id="mybutton"></div>
+<h2>Buttons</h2> Button-Toolbar Button-Group Button
+<div class="btn-toolbar" role="toolbar"> 
+  <div class="btn-group"> 
+  <button type="button" class="btn btn-default">Button 1</button> 
+  <button type="button" class="btn btn-default">Button 2</button> 
+  <button type="button" class="btn btn-default">Button 3</button> 
+ </div> 
+  <div class="btn-group"> 
+  <button type="button" class="btn btn-default">Button 4</button> 
+  <button type="button" class="btn btn-default">Button 5</button> 
+  <button type="button" class="btn btn-default">Button 6</button> 
+  </div> 
+  <div class="btn-group"> 
+  <button type="button" class="btn btn-default">Button 7</button> 
+  <button type="button" class="btn btn-default">Button 8</button> 
+  <button type="button" class="btn btn-default">Button 9</button> 
+  </div> 
+</div> 
+<h3>Vertical Button Group</h3>
+<div class="btn-group-vertical"> 
+  <button type="button" class="btn btn-default">Button 1</button> 
+  <button type="button" class="btn btn-default">Button 2</button> 
+ 
+  <div class="btn-group-vertical"> 
+    <button type="button" class="btn btn-default dropdown-toggle"  
+      data-toggle="dropdown"> 
+      Dropdown 
+      <span class="caret"></span> 
+    </button> 
+    <ul class="dropdown-menu"> 
+      <li><a href="#">Dropdown link 1</a></li> 
+      <li><a href="#">Dropdown link 2</a></li> 
+    </ul> 
+  </div> 
+</div> 
+<h3>Button Dropdown</h3>
+<div class="btn-group"> 
+   <button type="button" class="btn btn-default dropdown-toggle"  
+      data-toggle="dropdown"> 
+      Default <span class="caret"></span> 
+   </button> 
+   <ul class="dropdown-menu" role="menu"> 
+      <li><a href="#">Action</a></li> 
+      <li><a href="#">Another action</a></li> 
+      <li><a href="#">Something else here</a></li> 
+      <li class="divider"></li> 
+      <li><a href="#">Separated link</a></li> 
+   </ul> 
+</div> 
+<div class="btn-group"> 
+   <button type="button" class="btn btn-primary dropdown-toggle"  
+      data-toggle="dropdown"> 
+      Primary <span class="caret"></span> 
+   </button> 
+   <ul class="dropdown-menu" role="menu"> 
+      <li><a href="#">Action</a></li> 
+      <li><a href="#">Another action</a></li> 
+      <li><a href="#">Something else here</a></li> 
+      <li class="divider"></li> 
+      <li><a href="#">Separated link</a></li> 
+   </ul> 
+</div> 
+
+
+<h1>other</h1>
+
+<div id="myjumbotron"></div>
+<h2>jumbotron (make all elements bigger)</h2> 
+<div class="container"> 
+   <div class="jumbotron"> 
+      <h1>Welcome to landing page!</h1> 
+      <p>This is an example for jumbotron.</p> 
+      <p><a class="btn btn-primary btn-lg" role="button"> 
+         Learn more</a> 
+      </p> 
+   </div> 
+</div>
+
+<div id="mythumbnail"></div>
+<h2>thumbnail<h2> 
+<div class="row"> 
+   <div class="col-sm-6 col-md-3"> 
+      <div class="thumbnail"> 
+         <img src="kitti.png"  
+         alt="Generic placeholder thumbnail"> 
+      </div> 
+      <div class="caption"> 
+         <h3>Thumbnail label</h3> 
+         <p>Some sample text. Some sample text.</p> 
+         <p> 
+            <a href="#" class="btn btn-primary" role="button"> 
+               Button 
+            </a>  
+            <a href="#" class="btn btn-default" role="button"> 
+               Button 
+            </a> 
+         </p> 
+      </div> 
+   </div> 
+   <div class="col-sm-6 col-md-3"> 
+      <div class="thumbnail"> 
+         <img src="kitti.png"  
+         alt="Generic placeholder thumbnail"> 
+      </div> 
+      <div class="caption"> 
+         <h3>Thumbnail label</h3> 
+         <p>Some sample text. Some sample text.</p> 
+         <p> 
+            <a href="#" class="btn btn-primary" role="button"> 
+               Button 
+            </a>  
+            <a href="#" class="btn btn-default" role="button"> 
+               Button 
+            </a> 
+         </p> 
+      </div> 
+   </div> 
+   <div class="col-sm-6 col-md-3"> 
+      <div class="thumbnail"> 
+         <img src="kitti.png"  
+         alt="Generic placeholder thumbnail"> 
+      </div> 
+      <div class="caption"> 
+         <h3>Thumbnail label</h3> 
+         <p>Some sample text. Some sample text.</p> 
+         <p> 
+            <a href="#" class="btn btn-primary" role="button"> 
+               Button 
+            </a>  
+            <a href="#" class="btn btn-default" role="button"> 
+               Button 
+            </a> 
+         </p> 
+      </div> 
+   </div> 
+   <div class="col-sm-6 col-md-3"> 
+      <div class="thumbnail"> 
+         <img src="kitti.png"  
+         alt="Generic placeholder thumbnail"> 
+      </div> 
+      <div class="caption"> 
+         <h3>Thumbnail label</h3> 
+         <p>Some sample text. Some sample text.</p> 
+         <p> 
+            <a href="#" class="btn btn-primary" role="button"> 
+               Button 
+            </a>  
+            <a href="#" class="btn btn-default" role="button"> 
+               Button 
+            </a> 
+         </p> 
+      </div> 
+   </div> 
+</div> 
+
+
+
+<div id="myform"></div>
+<h2>form layout</h2> 
+
+<h3>vertical form</h3>
+<form role="form"> 
+   <div class="form-group"> 
+      <label for="name">Name</label> 
+      <input type="text" class="form-control" id="name"  
+         placeholder="Enter Name"> 
+   </div> 
+   <div class="form-group"> 
+      <label for="inputfile">File input</label> 
+      <input type="file" id="inputfile"> 
+      <p class="help-block">Example block-level help text here.</p> 
+   </div> 
+   <div class="checkbox"> 
+      <label> 
+      <input type="checkbox"> Check me out
+      </label> 
+   </div> 
+   <button type="submit" class="btn btn-default">Submit</button> 
+</form> 
+
+<h3>inline form (all elements aligned in in-a-line)</h3>
+<form class="form-inline" role="form"> 
+   <div class="form-group"> 
+      <label class="sr-only" for="name">Name</label> 
+      <input type="text" class="form-control" id="name"  
+         placeholder="Enter Name"> 
+   </div> 
+   <div class="form-group"> 
+      <label class="sr-only" for="inputfile">File input</label> 
+      <input type="file" id="inputfile"> 
+   </div> 
+   <div class="checkbox"> 
+      <label> 
+      <input type="checkbox"> Check me out 
+      </label> 
+   </div> 
+   <button type="submit" class="btn btn-default">Submit</button> 
+</form> 
+
+<h3> horizontal form</h3>
+<form class="form-horizontal" role="form"> 
+   <div class="form-group"> 
+      <label for="firstname" class="col-sm-2 control-label">First Name</label> 
+      <div class="col-sm-10"> 
+         <input type="text" class="form-control" id="firstname"  
+            placeholder="Enter First Name"> 
+      </div> 
+   </div> 
+   <div class="form-group"> 
+      <label for="lastname" class="col-sm-2 control-label">Last Name</label> 
+      <div class="col-sm-10"> 
+         <input type="text" class="form-control" id="lastname"  
+            placeholder="Enter Last Name"> 
+      </div> 
+   </div> 
+   <div class="form-group"> 
+      <div class="col-sm-offset-2 col-sm-10"> 
+         <div class="checkbox"> 
+            <label> 
+               <input type="checkbox"> Remember me 
+            </label> 
+         </div> 
+      </div> 
+   </div> 
+   <div class="form-group"> 
+      <div class="col-sm-offset-2 col-sm-10"> 
+         <button type="submit" class="btn btn-default">Sign in</button> 
+      </div> 
+   </div> 
+</form> 
+
+
+
+
+
+<p id="myfooter">Ok, here it ends</p>
+
+</body>
+</html> 
