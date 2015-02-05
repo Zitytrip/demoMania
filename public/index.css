@@ -1,7 +1,12 @@
 a {
   background-color:yellow;
   color: blue;
-  margin: 10px;
+  margin: 12px;
+  padding: 12px;
+  line-height: 3.0; /* 4 times the normal line height */
+}
 
-
+/* anchors with ID myapp */
+a.myapp {
+  background-color:#7FF0EA;
 }
