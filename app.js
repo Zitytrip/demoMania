@@ -1,4 +1,7 @@
 
+var config = require('./config');
+var conf = config.debug;
+
 // builtin
 var fs = require('fs');
 
@@ -26,7 +29,7 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-var port = 8000;
+var port = conf.server.port;
 app.listen(port);
 console.log("demoMania listening on port " + port);
 
