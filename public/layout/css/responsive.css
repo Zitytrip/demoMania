@@ -1,0 +1,45 @@
+
+div.one-third {
+	width: 47.5%;
+}
+
+div.one-third-second {
+	margin: 0;
+}
+
+div.one-third-last {
+	clear: both;
+	float: none;
+	width: auto;
+	padding: 20px 0 0 0;
+}
+
+div.nav ul li {
+	width: 25%;   */ less than 900px, make each "button"-li 25% wide, so 4 button columns */
+	border-bottom: 1px solid #bababa;
+}
+
+@media screen and (max-width: 620px) {
+	div.nav ul li { /* less tha 620 px, make each "button"-li 33% wide, so 3 button columns */
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	div.nav ul li {  /* less than 500 px, make each "button"-li 50% wide, so 2 button columns */ 
+		width: 50%;
+		font-size: 85%;
+	}
+	
+	div.mobile-collapse { /* main, sidebar, the 1/3 columns have this class. start a new row... */
+		width: auto;
+		float: none;  /* stops the float calculation - so moves to new line */
+		margin-right: 0;
+	}
+	
+	.hide-mobile {
+		display: none;  /* dont display at all if less than 500 px */
+	}
+		
+}

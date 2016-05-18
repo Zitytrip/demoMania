@@ -1,0 +1,129 @@
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0 0 1em 0;
+	font-size: 93%;
+	line-height: 1.5em;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #3f3f3f;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px 0;
+}
+
+/* Section Inner */
+div.section-inner {   /* header, footer, main are all thereafter are packed inside the inner div */
+	max-width: 1200px;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+
+/* Header */
+div.header {
+	  background-color: #E9E9E9;
+	  padding: 30px 0;  /* this is the height */
+}
+
+/* Navigation *********************************************************** */
+
+div.nav {
+	  background-color: #d4d4d4;
+}
+
+div.nav ul {
+	  margin: 0;
+	  padding: 0;
+}
+
+div.nav ul li {
+	list-style: none; /* don't show dots for the list-items */
+	float: left;
+	font-size: 93%;
+}
+
+div.nav ul li a:link,
+div.nav ul li a:visited {
+	display: block; 
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #000;
+	border-right: 1px solid #bababa;
+}
+
+/* Body Content */
+div.body-content {
+	  padding: 50px 0;
+    border: 1px solid orange;
+	background-color: #FFF;
+}
+
+/* Thirds ******************************************************************************** */
+
+div.thirds {
+	padding-bottom: 50px;
+}
+
+div.one-third {
+	width: 32%;         /* first two columns have margin, so 30+5  + 30 + 5 + 30 = 100 */
+	float: left;
+	margin-right: 5%;
+}
+
+div.one-third-last {
+	margin: 0;          /* last column does not have a margin */
+}
+
+/* Main Column ****************************************************************************  */
+div.main {
+	width: 65%;
+	float: right;
+	margin-left: 5%;
+}
+
+/* Side Column */
+div.side {
+    width: 30%;
+	  float: right;
+}
+
+/* Info Box */
+div.info-box-a {
+	  background-color: #9bdaef;
+    border: 2px solid red;
+	padding: 30px;
+	font-size: 13px;
+	margin: 0 0 15px 0;
+}
+
+div.info-box-b {
+	background-color: #efdb7f;
+  border: 1px solid blue;
+	padding: 10px;  /* inside of the box */
+	font-size: 13px;
+	margin: 0 0 15px 0;   /* top right bottom left; outsde of the box */
+}
+
+/* Footer *****************************************************************************************   */
+div.footer {
+	background-color: #3f3f3f;
+	color: #FFF;
+	padding: 15px 0;
+	text-align: center;
+}
+
+/* ****************************************************************************************************** */
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; } /* clear is the sister to float */
+.clearfix { *zoom: 1; }

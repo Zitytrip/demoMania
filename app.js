@@ -1,6 +1,5 @@
-
 var config = require('./config');
-var conf = config.debug;
+var conf = config.development;
 
 // builtin
 var fs = require('fs');
