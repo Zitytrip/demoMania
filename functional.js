@@ -1,6 +1,23 @@
+// http://kaw2k.github.io/posts/meetup-post/
+
 // To play around with this code, copy and paste the contents of this gist
 // into the javascript pane of http://jsbin.com/umoK/1/edit or go to 
 // http://jsbin.com/uZAfIqA/2/edit
+
+require('lambdajs').expose(global);
+
+var _ = require('lodash');
+var partial = require('lodash.partial');
+
+under = require ("scoreunder");
+
+//Function.prototype.autoCurry = function(n) {
+//    return under.autoCurry(this, n);
+//            
+//};
+
+//.expose(global);
+
 
 // =============================================================================
 // Generic API
