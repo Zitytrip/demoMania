@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+
+<body>
+
+   <link rel="stylesheet" href="./shippingQuotes.css">
+
+
+   <div class="wrapper">
+
+   <div class="box invoicelineitems">
+      <table ng-hide = "invoiceLines.length==0" class="table table-striped">
+         <thead>
+            <tr>
+               <th> Qty </th>
+               <th> Product </th>
+               <th> Value </th>
+           </tr>
+         </thead>
+
+         <tbody>
+            <tr>
+               <td> a  </td>
+               <td> b </td>
+               <td> c </td>
+            </tr>
+         </tbody>
+      </table>
+   </div> <!-- box lineitems -->
+
+   <div class="box clientaddress">
+     <p> 
+          Invoice No: <b> a </b> 
+          Ref: <b> {{currentInvoice.Reference}} </b>  
+          date: {{currentInvoice.Date}} 
+          Status: <b> {{currentInvoice.Status}} </b>
+     </p>
+     <p>Amount: <input type='text' placeholder="Name" ng-model="Total"> </input> </p>
+
+     <p> <b> Shipping To: </b> </p>
+     <!--   <li>to: {{currentInvoice.Contact.Name}}</li>  -->
+     <p>
+     <input type='text' placeholder="Name" ng-model="Name"> </input>
+     <input type='text' placeholder="Attn" ng-model="Attn"> </input>
+     </p>
+     <input type='text' placeholder="Street" ng-model="Street1"> </input>
+     <p>
+        <input type='text' placeholder="City" ng-model="City"> </input>
+        <input type='text' placeholder="zip code" ng-model="Zip"> </input>
+        <input type='text' placeholder="Region" ng-model="Region"> </input>
+     </p>
+
+     <input type='text' placeholder="Phone" ng-model="Phone"> </input>
+     <input type='text' placeholder="EmailAddress" ng-model="EmailAddress"> </input>
+  </div> <!-- box clientaddress -->
+
+   <div class="box packinglist">
+      <h3> packing list </h3>
+      <p> Note: If items from the invoice are missing here, then add product weight/length/width/height to product sheet. </p>
+      <button ng-show="packinglist.length==0" type="button" ng-click="AddPackingItem()"> Add Packing Item </button>
+      <table ng-hide = "packinglist.length==0" class="table table-striped">
+          <div>
+             {{packingSummary()}}
+             <input type="checkbox"  ng-model ="usePackingList"> Use PackingList </input>
+             <button type="button" align="right" ng-click="RequestQuotes()" >Request Quotes</button>
+          </div>
+        <thead>
+        <tr>
+          <th> <button type="button" ng-click="AddPackingItem()"> A </button>  </th>
+          <th> Qty </th>
+          <th> Product </th>
+          <th> Length </th>
+          <th> Width  </th>
+          <th> Height </th>
+          <th> Weight </th>
+          <th> Value </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="p in packinglist">
+          <td>  <button type="button" ng-click="RemovePackingItem( p.lineNo)"> {{p.lineNo}}</button> </td>
+          <td>  <input type='text' class="s" placeholder="Qty" ng-model="p.quantity"> </input>  </td>
+          <td>  <input type='text' placeholder="Description" ng-model="p.description"> </input>  </td>
+          <td>  <input type='text' class="s" placeholder="Length" ng-model="p.length"> </input>  </td>
+          <td>  <input type='text' class="s" placeholder="Width" ng-model="p.width"> </input>  </td>
+          <td>  <input type='text' class="s" placeholder="Height" ng-model="p.height"> </input>  </td>
+          <td>  <input type='text' class="s" placeholder="Weight" ng-model="p.weight"> </input>  </td>
+          <td>  <input type='text' class="s" placeholder="Value" ng-model="p.value"> </input>  </td>
+        </tr>
+      </tbody>
+    </table>
+    </div> <!-- box packinglist -->
+
+   <div class="container box myaction">
+       <div id="exTab2" class="container">
+           <ul class="nav nav-tabs">
+               <li class="active"> <a  href="#axero" data-toggle="tab"> XeroCost </a> </li>
+               <li> <a href="#ashiphawk" data-toggle="tab"> ShipHawk </a> </li>
+               <li> <a href="#aredstag" data-toggle="tab"> Redstag  </a>  </li>
+           </ul>
+
+           <div class="tab-content ">
+               <div class="tab-pane active" id="axero">
+                   <h3> Set Shipping Cost in Xero for this invoice </h3>
+               </div> <!-- xero -->
+
+               <div class="tab-pane" id="ashiphawk">
+                  <h3> Ship via shiphawk  </h3>
+                  <div ng-hide="data1.selectedQuote===undefined">
+                      <!-- <p> {{data1.selectedQuote}}</p> -->
+                      <p> Send {{data1.quote.transportType}} from {{warehouse_code}} with {{data1.quote.carrier}} for USD {{data1.quote.price}} </p>
+                      <p> Expected Delivery: {{data1.quote.est_delivery_date}} ( {{data1.quote.Days}} days) </p>
+                      <p> Authorizaton Password: <input type='password' placeholder="password" ng-model="password"> </input> </p>
+                      <p> <button type="button" ng-click="CreateShipment()" > CreateShipment </button> </p>
+                      <p> {{shipmentMessage}} </p>
+                   </div>
+               </div> <!-- shiphawk -->
+
+               <div class="tab-pane redstagaction" id="aredstag">
+                   <p> Send order for fillment with redstag.  Order will appear in redstag backend message if successful. </p>
+                   <p> <b> residential shipment under 5lb: </b> SmartPost (but delivery time is 2-7 days):  
+                       FedEx charges $3.45 Residential Delivery Fee; 
+                       Fedex SmartPost does not have that fee, which is why it's less costly for lighter shipments.
+                   </p>
+                   <p> <b> Heavier residential shipments </b>: FedEx Home Delivery  </p>
+		   <p> <b> All business deliveries: </b> Fedex Ground </p>
+                   <p> <b> for LTL </b> Redstag charges $35 per pallet to load them onto the LTL </p>
+                   <p> The price estimate is only for FEDEX GROUND; other shipping methods can have other prices </p>
+                   <p> <select ng-model="redstagShippingMethod" >
+                           <option ng-repeat="s in redstagShippingMethods">{{s}}</option>
+                       </select>
+                   </p>
+
+                   <p> Authorizaton Password: <input type='password' placeholder="password" ng-model="passwordRedstag"> </input> <button type="button" ng-click="SendRedstag()" >Send to Redstag</button> </p>
+                   <p> {{redstagMessage}} </p>
+                   <div ng-hide="redstagOrderId===''">
+                      <p> Redstag orderId <a href="https://redstagfulfillment.com/backend/index.php/client/sales_order/view/order_id/{{redstagOrderId}}"> {{redstagOrderId}} </a> created! </p>
+                   </div>
+               </div> <!-- redstag -->
+
+           </div> <!-- tab content -->
+      </div> <!-- exTab -->
+  </div> <!-- box myaction -->
+
+   <div class="box redstagcost" ng-show = "hasRedstagCost">
+        <p> Redstag Fedex Ground:   Distance: {{redstag.distance}} miles => FedexZone: {{redstag.zone}} Weight: {{redstag.weight}} Price : {{redstag.price}}. USD/lb: {{redstag.usdperlb}} </p>
+        <p> Note: shipments bigger than 150lb are assumed to be sent in 150lb lots with the remainder being the last package </p> 
+   </div>
+
+
+   <div class="box shippingquotes">
+     <table ng-show = "hasQuotes" class="table table-striped">
+      <thead>
+        <tr>
+          <th> S </th>
+          <th> Type </th>
+          <th> Carrier </th>
+          <th> Price </th>
+          <th> ServiceLevel </th>
+          <th> Est.DeliveryDate </th>
+          <th> Days in Delivery </th>
+          <th> USD/lb </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="quote in quotes">
+          <td> <input type="radio" ng-model="data1.selectedQuote" value="{{quote.id}}"  /> </td>
+          <td> {{quote.transportType}} </td>
+          <td> {{quote.carrier}} </td>
+          <td> {{quote.price}}</td>
+          <td> {{quote.service_level}}</td>
+          <td> {{quote.est_delivery_date}}</td>
+          <td> {{quote.Days}}</td>
+          <td> {{ (quote.price / Weight).toFixed(2) }} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div> <!-- div box shippingQuotes-->
+
+   <div class="box error" ng-show="hasError">
+      <h2>{{ErrorMessage}}</h2>
+   </div> <!-- div errorMessage -->
+
+   <div class="box notes">
+     <b>Notes:</b>
+      <ol>
+        <li>The weight of the pallet is automatically added. In the Shiphawk website, you have to ADD the weight of the pallet.</li>
+        <li>This page searches both LTL and Courier; in the Shiphawk webpage, you have to do TWO requests to find out which option is cheaper </li>
+        <li>This page estimates the weight as a minimum of 5 lb, and for courier the shipping cost might be much cheaper if the weight is only 2 lb </li>
+        <li> For better layout, download google chrome 57 dev or later.  </li>
+      </ol>
+  </div> <!-- div notes -->
+
+   </div>  <!-- div grid -->
+
+
+
+
+</body>
+</html>

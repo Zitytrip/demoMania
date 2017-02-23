@@ -1,0 +1,110 @@
+
+body {
+    margin: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 8cm 8cm 8cm;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    max-widt: 100%;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px; i /* space between outer box and inside content */
+    font-size: 100%;
+    max-width: 100%;
+}
+
+
+
+/* LINE 1: invoice line items and client address     */
+
+.invoicelineitems { /* invoice line items */
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: #ddf;
+    color: black;
+    font-size: 100%;
+}
+
+.clientaddress { /* client shipping address  */
+    grid-column: 4;
+    grid-row: 1;
+    background-color: gainsboro; /* #4A4A4; */
+    color: black;
+}
+
+/* LINE 2: packing list and action */
+
+.packinglist { /* packing list */
+    grid-column: 1/4;
+    grid-row: 2;
+    color: blue;
+    font-size: 100%;
+    background-color: #ddf;
+}
+
+.myaction { /* action (xero/shiphawk/redstag) */
+    grid-column: 4;
+    grid-row: 2;
+    color: red; /* foreground color */
+    background-color: gainsboro; 
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+/* FULL LINES */
+
+.redstagcost { /* redstag fedex cost */
+    grid-column: 1/5;
+    grid-row: 3;
+    background-color: palegoldenrod;
+    color: blue; /* foreground color */
+    font-size: 150%;
+    max-width: 100%;
+}
+
+
+.shippingquotes { /* shipping quotes */
+    grid-column: 1/5;
+    grid-row: 4;
+    background-color: palegoldenrod;
+    color: black; /* foreground color */ 
+    font-size: 100%;
+}
+
+.error { /* error */
+    grid-column: 1/5;
+    grid-row: 5;
+    background-color: red;
+    color: black; /* foreground color */ 
+    font-size: 100%;
+    max-width: 100%;
+}
+
+.notes { /* notes */
+    grid-column: 1/5;
+    grid-row: 6;
+    background-color: silver;
+    color: black; /* foreground color */ 
+    font-size: 100%;
+}
+
+
+
+.blue {
+    color: blue;
+}
+
+
+.s {
+    width: 2cm;
+}
