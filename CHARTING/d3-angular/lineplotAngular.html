@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-app lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+   <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+    <!-- Angular Bootstrap http://angular-ui.github.io/bootstrap/ tpls = templates -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- d3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+    <script src="lineplotAngular.js"></script>
+
+<body>
+
+  <div ng-controller="eventCrtl as ec">
+	 <div linear-chart chart-data="salesData"></div>
+  </div>
+
+
+</body>
+</html>
