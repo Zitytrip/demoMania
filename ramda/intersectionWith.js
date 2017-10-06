@@ -16,5 +16,6 @@ var csny = [
 
 ];
 
+// creates a new list, with those elements contained in both lists.
 var x = R.intersectionWith(R.eqBy(R.prop('id')), buffaloSpringfield, csny);
 console.log (JSON.stringify (x))
