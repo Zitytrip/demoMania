@@ -2,8 +2,8 @@ var imaps = require('imap-simple');
  
 var config = {
     imap: {
-        user: 'your@email.address',
-        password: 'yourpassword',
+        user: 'citi.trip.vienna@gmail.com',
+        password: 'regenschirm13',
         host: 'imap.gmail.com',
         port: 993,
         tls: true,
@@ -14,8 +14,10 @@ var config = {
 imaps.connect(config).then(function (connection) {
  
     return connection.openBox('INBOX').then(function () {
+
         var searchCriteria = [
-            'UNSEEN'
+            //'UNSEEN'
+            '1:10'
         ];
  
         var fetchOptions = {
@@ -23,18 +25,27 @@ imaps.connect(config).then(function (connection) {
             markSeen: false
         };
         
-          return connection.search(searchCriteria, fetchOptions).then(function (results) {
-            var subjects = results.map(function (res) {
-                return res.parts.filter(function (part) {
-                    return part.which === 'HEADER';
-                })[0].body.subject[0];
+        var filterHeader = function (part) {
+           return part.which === 'HEADER';
+        };
+
+        return connection.search(searchCriteria, fetchOptions).then(function (results) {
+
+            console.log (JSON.stringify(results[0]));
+
+            var subjects = results.map( function (res) {
+                return res.parts.filter( filterHeader ) [0].body.subject[0];
             });
- 
-            console.log(subjects);
-            // =>
-            //   [ 'Hey Chad, long time no see!',
-            //     'Your amazon.com monthly statement',
-            //     'Hacker Newsletter Issue #445' ]
+
+           console.log(subjects);
+           connection.end();
         });
-    });
+       
+ 
+       // =>
+       //   [ 'Hey Chad, long time no see!',
+       //     'Your amazon.com monthly statement',
+       //     'Hacker Newsletter Issue #445' ]
+       });
+
 });
