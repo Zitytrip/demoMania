@@ -1,6 +1,7 @@
 var imaps = require('imap-simple');
 var R = require("ramda");
- 
+ var mimelib = require("mimelib");
+
 var config = {
     imap: {
         user: 'citi.trip.vienna@gmail.com',
@@ -70,8 +71,11 @@ imaps.connect(config).then(function (connection) {
            console.log(subjects);
 
            var m = getResult(results[0]);
+           var b = mimelib.parseMimeWords(m.body);
            delete m.body;
            console.log(`EMAIL: ${JSON.stringify(m)}` );
+           console.log("MIME: " + b);
+           
 
            connection.end();
         });
