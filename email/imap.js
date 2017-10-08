@@ -1,4 +1,5 @@
 var imaps = require('imap-simple');
+var R = require("ramda");
  
 var config = {
     imap: {
@@ -10,7 +11,37 @@ var config = {
         authTimeout: 3000
     }
 };
- 
+
+
+var filterHeader = function (part) {
+    return part.which === 'HEADER';
+};
+
+var filterBody = function (part) {
+    return part.which === 'TEXT';
+};
+
+function getResult (result) {
+    //console.log("result:" + JSON.stringify(result));
+    var header = R.filter (filterHeader, result.parts) [0] ;
+    //console.log("Header:" + JSON.stringify(header));
+
+    var body = R.filter (filterBody, result.parts) [0] ;
+    //console.log("body:" + JSON.stringify(body));
+
+    return {
+        date: result.attributes.date,
+        flags: result.attributes.flags,
+        xgmmsgid: result.attributes["x-gm-msgid"],
+
+        subject: header.body.subject[0],
+        from: header.body.from[0],
+        msgid: header.body["message-id"],
+
+        body: body.body
+    };
+}
+
 imaps.connect(config).then(function (connection) {
  
     return connection.openBox('INBOX').then(function () {
@@ -22,12 +53,11 @@ imaps.connect(config).then(function (connection) {
  
         var fetchOptions = {
             bodies: ['HEADER', 'TEXT'],
-            markSeen: false
+            markSeen: false,
+            struct: true
         };
         
-        var filterHeader = function (part) {
-           return part.which === 'HEADER';
-        };
+       
 
         return connection.search(searchCriteria, fetchOptions).then(function (results) {
 
@@ -38,6 +68,11 @@ imaps.connect(config).then(function (connection) {
             });
 
            console.log(subjects);
+
+           var m = getResult(results[0]);
+           delete m.body;
+           console.log(`EMAIL: ${JSON.stringify(m)}` );
+
            connection.end();
         });
        
