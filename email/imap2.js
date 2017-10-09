@@ -68,9 +68,12 @@ async function demo () {
     //var mailboxes = await client.listMailboxes();
     //console.log(mailboxes);
 
-    var messages = await client.listMessages('INBOX', '1:1', ['uid', 'flags', 'envelope','bodystructure', 'body[]']);
+    var messages = await client.listMessages('INBOX', '10000:10010', ['uid', 'flags', 'envelope','bodystructure', 'body[]']);
 
-    messages.forEach( message => {
+    if ( (messages==undefined ) || (messages.length==0) ) {
+        console.log("No messages returned. exiting.")
+    }
+    else  messages.forEach( message => {
         console.log('Flags for ' + message.uid + ': ' + message.flags.join(', '));
         
         //delete message["body[]"];
@@ -78,9 +81,10 @@ async function demo () {
       
         var data = parseMessage (message);
         console.log(data);
+         
     });
-
     await client.logout();
+   
 
 
 }
