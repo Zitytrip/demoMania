@@ -1,6 +1,10 @@
 var imaps = require('imap-simple');
 var R = require("ramda");
- var mimelib = require("mimelib");
+var mimelib = require("mimelib");
+var simpleParser = require('mailparser').simpleParser;
+var libmime = require('libmime');
+var MimeParser = require('emailjs-mime-parser');
+
 
 var config = {
     imap: {
@@ -43,7 +47,8 @@ function getResult (result) {
     };
 }
 
-imaps.connect(config).then(function (connection) {
+async function demo () {
+    imaps.connect(config).then(function (connection) {
  
     return connection.openBox('INBOX').then(function () {
 
@@ -60,7 +65,7 @@ imaps.connect(config).then(function (connection) {
         
        
 
-        return connection.search(searchCriteria, fetchOptions).then(function (results) {
+        return connection.search(searchCriteria, fetchOptions).then( async function (results) {
 
             console.log (JSON.stringify(results[0]));
 
@@ -71,11 +76,24 @@ imaps.connect(config).then(function (connection) {
            console.log(subjects);
 
            var m = getResult(results[0]);
-           var b = mimelib.parseMimeWords(m.body);
+           var b = mimelib.parseMimeWords(m.body); // readable multipart mime.
+           
+           //var b= await simpleParser(m.body);
            delete m.body;
            console.log(`EMAIL: ${JSON.stringify(m)}` );
-           console.log("MIME: " + b);
            
+           b = b.replace ("This is a multi-part message in MIME format.", "");
+
+           var d = libmime.decodeWords(b);
+           console.log("DECODED: " + d)
+            console.log("MIME: " + b); // JSON.stringify(b));
+
+            var parser = new MimeParser ();
+            parser.onbodystructure = function(chunk){
+                console.log("CHUNK: " + chunk);
+            };
+            parser.write(b);
+            parser.end();
 
            connection.end();
         });
@@ -87,4 +105,7 @@ imaps.connect(config).then(function (connection) {
        //     'Hacker Newsletter Issue #445' ]
        });
 
-});
+   });
+}
+
+demo();
