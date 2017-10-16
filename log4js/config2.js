@@ -1,4 +1,3 @@
-var log4js = require('log4js');
 
 
 var logSetting =  {
@@ -23,19 +22,3 @@ var logSetting =  {
 
 
 log4js.configure(logSetting);
-
-
-
-var logger1 = log4js.getLogger("payment.ccWorkflow");
-logger1.level = 'debug';
-logger1.debug("bongo trott");
-
-var logger2 = log4js.getLogger("payment.ccApiDirect");
-logger2.level = 'debug';
-logger2.debug("bongo trott");
-logger2.error("error 1 asdlfkj asdlfk j");
-
-var logger3 = log4js.getLogger("payment.ccDB");
-logger3.level = 'debug';
-logger3.debug("bongo trott");
-
