@@ -12,6 +12,7 @@ var logSetting =  {
     {
         "type": "smtp",
         "recipients": "hoertlehner@gmail.com",
+        "subject": "log - demo mania", 
         "sendInterval": 60,
         "SMTP": {
             "host": "smtp.gmail.com",
