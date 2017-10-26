@@ -1,3 +1,5 @@
 # dont sync node modules.
 node_modules
 log/*.log
+
+public/dist/*.js
