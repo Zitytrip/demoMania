@@ -1,0 +1,1 @@
+curl -X POST -d @data/calendarAdd.json https://www.googleapis.com/calendar/v3/calendars/citi.trip.vienna%40gmail.com/events?access_token=ya29.CjHXAnnfxt_yCHHNUF55FJYKrJwnx4Ed4ILoy2XxdqhM6PTBMQF2ISIFBOYAe2AEQpne --header "Content-Type:application/json"
