@@ -11,7 +11,7 @@ async function test () {
         console.log(b);
     }
     catch (err) {
-        console.log("Error: " + err)
+        console.log("Error: " + JSON.stringify(err))
     }
 }
 
