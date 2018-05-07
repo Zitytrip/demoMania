@@ -6,8 +6,13 @@ var fE = Promise.promisify(fs.access);
 
 
 async function test () {
-    var b = await fE ("db.js33");
-    console.log(b);
+    try {
+        var b = await fE ("db.js33");
+        console.log(b);
+    }
+    catch (err) {
+        console.log("Error: " + err)
+    }
 }
 
 test();
