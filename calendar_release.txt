@@ -1,0 +1,105 @@
+categoryId  dateOnly              title                                                                         country  uid                      addedBy
+45          2018-06-01T12:30:00Z  Nonfarm Payrolls                                                              US       af-event-47226@ntkn.com  kevin.kastner
+98          2018-06-01T14:00:00Z  ISM Manufacturing                                                             US       af-event-46176@ntkn.com  kevin.kastner
+48          2018-06-01T14:00:00Z  Construction Spending month on month                                          US       af-event-47479@ntkn.com  kevin.kastner
+20031       2018-06-04T09:00:00Z  Euro Area Industrial Producer Prices (total industry excluding construction)  EU       af-event-49979@ntkn.com  anna.uvarova
+136         2018-06-04T13:45:00Z  New York ISM                                                                  US       af-event-48388@ntkn.com  kevin.kastner
+47          2018-06-04T14:00:00Z  Factory Orders                                                                US       af-event-47599@ntkn.com  kevin.kastner
+20037       2018-06-04T23:01:00Z  BRC-KPMG Shop Sales Monitor (Measures Values Monthly)                         UK       af-event-49700@ntkn.com  jai.lakhani
+20029       2018-06-05T09:00:00Z  Euro Area Retail Trade                                                        EU       af-event-49984@ntkn.com  anna.uvarova
+40012       2018-06-05T12:30:00Z  Labour Productivity and Costs                                                 CA       af-event-49105@ntkn.com  yali.ndiaye
+31          2018-06-05T12:55:00Z  Redbook Retail Sales Index                                                    US       af-event-46378@ntkn.com  kevin.kastner
+99          2018-06-05T14:00:00Z  ISM Non-Manufacturing                                                         US       af-event-46200@ntkn.com  kevin.kastner
+107         2018-06-05T14:00:00Z  IBD/TIPP Optimism Index                                                       US       af-event-48115@ntkn.com  kevin.kastner
+134         2018-06-05T14:00:00Z  Job Openings and Labor Turnover Survey (Openings Level)                       US       af-event-48284@ntkn.com  kevin.kastner
+135         2018-06-05T14:00:00Z  Job Openings and Labor Turnover Survey (Quits Rate)                           US       af-event-48308@ntkn.com  kevin.kastner
+21606       2018-06-06T07:15:00Z  CH CPI                                                                        CH       af-event-49992@ntkn.com  anna.uvarova
+106         2018-06-06T11:00:00Z  MBA Weekly Applications Index                                                 US       af-event-46482@ntkn.com  kevin.kastner
+121         2018-06-06T12:30:00Z  Final Non-Farm Productivity                                                   US       af-event-47330@ntkn.com  kevin.kastner
+39          2018-06-06T12:30:00Z  Trade Balance                                                                 US       af-event-47344@ntkn.com  kevin.kastner
+40001       2018-06-06T12:30:00Z  Building Permits                                                              CA       af-event-48834@ntkn.com  yali.ndiaye
+40009       2018-06-06T12:30:00Z  International Merchandise Trade (Trade Balance)                               CA       af-event-48955@ntkn.com  yali.ndiaye
+138         2018-06-06T14:30:00Z  US DOE Refinery Utilization and Petroleum Stocks                              US       af-event-46651@ntkn.com  kevin.kastner
+21605       2018-06-07T05:45:00Z  CH Unemployment                                                               CH       af-event-49995@ntkn.com  anna.uvarova
+40          2018-06-07T12:30:00Z  Initial Jobless Claims                                                        US       af-event-46274@ntkn.com  kevin.kastner
+89          2018-06-07T14:30:00Z  US DOE Natural Gas Stocks                                                     US       af-event-46755@ntkn.com  kevin.kastner
+44          2018-06-07T19:00:00Z  Consumer Credit month over month                                              US       af-event-47675@ntkn.com  kevin.kastner
+20039       2018-06-08T08:30:00Z  Bank of England/TNS Inflation Attitudes Survey                                UK       af-event-49263@ntkn.com  les.commons
+40006       2018-06-08T12:15:00Z  Housing Starts – CMHC (Canadian Mortgage and Housing Corp)                    CA       af-event-48475@ntkn.com  yali.ndiaye
+40002       2018-06-08T12:30:00Z  Capacity Utilization                                                          CA       af-event-49025@ntkn.com  yali.ndiaye
+40009       2018-06-08T12:30:00Z  International Merchandise Trade (Trade Balance)                               CA       af-event-49085@ntkn.com  yali.ndiaye
+40011       2018-06-08T12:30:00Z  Labour Force Survey                                                           CA       af-event-49784@ntkn.com  yali.ndiaye
+43          2018-06-08T14:00:00Z  Wholesale Trade                                                               US       af-event-47551@ntkn.com  kevin.kastner
+20052       2018-06-11T08:30:00Z  UK Quarterly Construction Output                                              UK       af-event-49622@ntkn.com  les.commons
+20009       2018-06-11T08:30:00Z  UK Industrial Production                                                      UK       af-event-49626@ntkn.com  les.commons
+20004       2018-06-12T08:30:00Z  UK Labour Report                                                              UK       af-event-49412@ntkn.com  les.commons
+20008       2018-06-12T08:30:00Z  UK Trade Balance                                                              UK       af-event-49628@ntkn.com  les.commons
+113         2018-06-12T10:00:00Z  NFIB Small Business Optimism Index                                            US       af-event-47946@ntkn.com  kevin.kastner
+32          2018-06-12T12:30:00Z  Consumer Price Index - CPI                                                    US       af-event-47298@ntkn.com  kevin.kastner
+31          2018-06-12T12:55:00Z  Redbook Retail Sales Index                                                    US       af-event-46380@ntkn.com  kevin.kastner
+144         2018-06-12T16:00:00Z  USDA Crop Estimates - WASDE                                                   US       af-event-47421@ntkn.com  kevin.kastner
+38          2018-06-12T18:00:00Z  Treasury Budget                                                               US       af-event-48564@ntkn.com  kevin.kastner
+20003       2018-06-13T08:30:00Z  UK Producer Prices                                                            UK       af-event-49416@ntkn.com  les.commons
+20001       2018-06-13T08:30:00Z  Consumer Price Index - CPI                                                    UK       af-event-49414@ntkn.com  les.commons
+106         2018-06-13T11:00:00Z  MBA Weekly Applications Index                                                 US       af-event-46484@ntkn.com  kevin.kastner
+36          2018-06-13T12:30:00Z  Producer Price Index - PPI                                                    US       af-event-47274@ntkn.com  kevin.kastner
+138         2018-06-13T14:30:00Z  US DOE Refinery Utilization and Petroleum Stocks                              US       af-event-46653@ntkn.com  kevin.kastner
+141         2018-06-13T18:00:00Z                                                                                         af-event-47702@ntkn.com  kevin.kastner
+7005        2018-06-14T02:00:00Z  Fixed-Asset Investment                                                        CN       af-event-48690@ntkn.com  flora.guo
+7002        2018-06-14T02:00:00Z  Industrial Output                                                             CN       af-event-48710@ntkn.com  flora.guo
+7003        2018-06-14T02:00:00Z  Retail Sales                                                                  CN       af-event-48730@ntkn.com  flora.guo
+20021       2018-06-14T08:30:00Z  UK Retail Sales                                                               UK       af-event-49281@ntkn.com  les.commons
+40          2018-06-14T12:30:00Z  Initial Jobless Claims                                                        US       af-event-46276@ntkn.com  kevin.kastner
+41          2018-06-14T12:30:00Z  Import Export                                                                 US       af-event-47250@ntkn.com  kevin.kastner
+37          2018-06-14T12:30:00Z  Retail Sales                                                                  US       af-event-47451@ntkn.com  kevin.kastner
+40015       2018-06-14T12:30:00Z  New Housing Price Index                                                       CA       af-event-49141@ntkn.com  yali.ndiaye
+35          2018-06-14T14:00:00Z  Business Inventories month on month                                           US       af-event-47575@ntkn.com  kevin.kastner
+89          2018-06-14T14:30:00Z  US DOE Natural Gas Stocks                                                     US       af-event-46757@ntkn.com  kevin.kastner
+34          2018-06-15T12:30:00Z  Empire State Manufacturing Survey                                             US       af-event-48091@ntkn.com  kevin.kastner
+40010       2018-06-15T12:30:00Z  International Canadian Transaction in Securities                              CA       af-event-48931@ntkn.com  yali.ndiaye
+40014       2018-06-15T12:30:00Z  Monthly Survey of Manufacturing                                               CA       af-event-49117@ntkn.com  yali.ndiaye
+40023       2018-06-15T13:00:00Z  Home Sales – CREA (Canadian real estate association)                          CA       af-event-48497@ntkn.com  yali.ndiaye
+33          2018-06-15T13:15:00Z  Industrial Production and Capacity Utilization                                US       af-event-47651@ntkn.com  kevin.kastner
+30          2018-06-15T20:00:00Z  Treasury International Capital Data - TIC Flows                               US       af-event-46593@ntkn.com  kevin.kastner
+95          2018-06-18T14:00:00Z  NAHB Home Builder Confidence                                                  US       af-event-48437@ntkn.com  kevin.kastner
+55          2018-06-19T12:30:00Z  Housing Starts and Building Permits                                           US       af-event-47503@ntkn.com  kevin.kastner
+31          2018-06-19T12:55:00Z  Redbook Retail Sales Index                                                    US       af-event-46382@ntkn.com  kevin.kastner
+106         2018-06-20T11:00:00Z  MBA Weekly Applications Index                                                 US       af-event-46486@ntkn.com  kevin.kastner
+105         2018-06-20T12:30:00Z  Current Account                                                               US       af-event-47400@ntkn.com  kevin.kastner
+53          2018-06-20T14:00:00Z  Existing Home Sales                                                           US       af-event-47825@ntkn.com  kevin.kastner
+138         2018-06-20T14:30:00Z  US DOE Refinery Utilization and Petroleum Stocks                              US       af-event-46655@ntkn.com  kevin.kastner
+21608       2018-06-21T07:30:00Z  Swiss National Bank 3 Month Libor Basis Point change                          CH       af-event-49610@ntkn.com  alina.haag
+21607       2018-06-21T07:30:00Z  Swiss National Bank 3 Month Libor Rate Direction                              CH       af-event-49612@ntkn.com  alina.haag
+21609       2018-06-21T07:30:00Z  Swiss National Bank 3 Month Libor Rate Range                                  CH       af-event-49614@ntkn.com  alina.haag
+21613       2018-06-21T07:30:00Z  Swiss National Bank Interest Rate on Sight Deposit Percentage Point Change    CH       af-event-49616@ntkn.com  alina.haag
+21610       2018-06-21T07:30:00Z  Swiss National Bank Interest Rates on Sight Deposits                          CH       af-event-49618@ntkn.com  alina.haag
+21612       2018-06-21T07:30:00Z  Swiss National BankInterest Rates on Sight Deposits Rate Level                CH       af-event-49620@ntkn.com  alina.haag
+20007       2018-06-21T08:30:00Z  Public Sector Finances                                                        UK       af-event-49283@ntkn.com  les.commons
+20016       2018-06-21T11:00:00Z  Bank Of England Interest Rate                                                 UK       af-event-47040@ntkn.com  les.commons
+20036       2018-06-21T11:00:00Z  Bank Of England Quantitative Easing                                           UK       af-event-47042@ntkn.com  les.commons
+20060       2018-06-21T11:00:00Z  BOE Minutes Policy Decision Inflation Report                                  UK       af-event-48597@ntkn.com  les.commons
+40          2018-06-21T12:30:00Z  Initial Jobless Claims                                                        US       af-event-46278@ntkn.com  kevin.kastner
+40001       2018-06-21T12:30:00Z  Building Permits                                                              CA       af-event-49179@ntkn.com  yali.ndiaye
+111         2018-06-21T13:00:00Z  FHFA HPI Monthly                                                              US       af-event-46144@ntkn.com  kevin.kastner
+89          2018-06-21T14:30:00Z  US DOE Natural Gas Stocks                                                     US       af-event-46759@ntkn.com  kevin.kastner
+40028       2018-06-22T12:30:00Z  Consumer Price Index and Retail Trade Combined                                CA       af-event-49366@ntkn.com  yali.ndiaye
+40001       2018-06-22T12:30:00Z  Building Permits                                                              CA       af-event-48977@ntkn.com  yali.ndiaye
+51          2018-06-25T14:00:00Z  New Home Sales                                                                US       af-event-47527@ntkn.com  kevin.kastner
+31          2018-06-26T12:55:00Z  Redbook Retail Sales Index                                                    US       af-event-46384@ntkn.com  kevin.kastner
+52          2018-06-26T14:00:00Z  Consumer Confidence                                                           US       af-event-48162@ntkn.com  kevin.kastner
+106         2018-06-27T11:00:00Z  MBA Weekly Applications Index                                                 US       af-event-46488@ntkn.com  kevin.kastner
+50          2018-06-27T12:30:00Z  Durable Goods Orders                                                          US       af-event-47623@ntkn.com  kevin.kastner
+42          2018-06-27T14:00:00Z  Pending Home Sales                                                            US       af-event-47851@ntkn.com  kevin.kastner
+138         2018-06-27T14:30:00Z  US DOE Refinery Utilization and Petroleum Stocks                              US       af-event-46657@ntkn.com  kevin.kastner
+40          2018-06-28T12:30:00Z  Initial Jobless Claims                                                        US       af-event-46280@ntkn.com  kevin.kastner
+49          2018-06-28T12:30:00Z  Gross Domestic Product - GDP                                                  US       af-event-47360@ntkn.com  kevin.kastner
+89          2018-06-28T14:30:00Z  US DOE Natural Gas Stocks                                                     US       af-event-46761@ntkn.com  kevin.kastner
+20015       2018-06-29T08:30:00Z  UK Index of Services                                                          UK       af-event-49630@ntkn.com  les.commons
+20011       2018-06-29T08:30:00Z  UK GDP Third Estimate                                                         UK       af-event-49632@ntkn.com  les.commons
+20054       2018-06-29T08:30:00Z  Quarterly Current Account Balance (stg blns)                                  UK       af-event-49634@ntkn.com  les.commons
+57          2018-06-29T12:30:00Z  Personal Income and Consumption (current dollars)                             US       af-event-47384@ntkn.com  kevin.kastner
+40005       2018-06-29T12:30:00Z  Gross Domestic Product by Industry                                            CA       af-event-49376@ntkn.com  yali.ndiaye
+40007       2018-06-29T12:30:00Z  Industrial Product and Raw Material Price Index                               CA       af-event-49037@ntkn.com  yali.ndiaye
+40026       2018-06-29T12:30:00Z  Principal Field Crop Areas                                                    CA       af-event-49163@ntkn.com  yali.ndiaye
+118         2018-06-29T13:42:00Z  MNI Chicago Report                                                            US       af-event-48337@ntkn.com  les.commons
+124         2018-06-29T16:00:00Z  USDA Grain Stock and Acreage Combined                                         US       af-event-47437@ntkn.com  kevin.kastner

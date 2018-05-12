@@ -52,9 +52,9 @@ function ConvertEvent (event) {
 soapClient.call ({
     method    : "getEvents",
     attributes: {},
-    params	: { start: "2018-04-01T09:30:00+0100", // format: yyyy­MM­dd'T'HH:mm:ssZ 
-                end:   "2018-05-01T09:30:00+0100",   // format: yyyy­MM­dd'T'HH:mm:ssZ
-                type: "ESTIMATE" // Values can be RELEASE or ESTIMATE
+    params	: { start: "2018-04-25T09:30:00+0100", // format: yyyy­MM­dd'T'HH:mm:ssZ 
+                end:   "2018-05-25T09:30:00+0100",   // format: yyyy­MM­dd'T'HH:mm:ssZ
+                type: "RELEASE" //  "ESTIMATE" // Values can be RELEASE or ESTIMATE
     }})
 .then((callResponse) => {
     console.log(callResponse.data);	// response data as json
@@ -70,7 +70,19 @@ soapClient.call ({
     var events = R.map (ConvertEvent, callResponse.data);
     console.log(JSON.stringify(events[33]));
 
-    console.log(printTable(["categoryId", "dateOnly", "title", "country", "uid", "addedBy"], events))
+    console.log(printTable(["categoryId", "dateOnly", "title", "country", "uid", "addedBy"], events));
+
+    var e = events[33];
+    soapClient.call ( {
+        method: "getEvent",
+        attributes: {},
+        params : {
+            uid: e.uid
+        }
+    }).then (details => {
+         console.log(details.data);	
+    });
+
     
 })
 .catch((err) => { throw new Error(err); });

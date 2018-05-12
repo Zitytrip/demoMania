@@ -1,0 +1,101 @@
+categoryId  dateOnly              title                                                                                    country  uid                      addedBy
+20031       2018-06-01T13:40:00Z  ESTIMATE - Euro Area Industrial Producer Prices (total industry excluding construction)  EU       af-event-49980@ntkn.com  anna.uvarova
+47          2018-06-01T20:15:00Z  ESTIMATE - Factory Orders                                                                US       af-event-47600@ntkn.com  kevin.kastner
+136         2018-06-01T20:15:00Z  ESTIMATE - New York ISM                                                                  US       af-event-48389@ntkn.com  kevin.kastner
+20037       2018-06-04T13:40:00Z  ESTIMATE - BRC-KPMG Shop Sales Monitor (Measures Values Monthly)                         UK       af-event-49701@ntkn.com  jai.lakhani
+20029       2018-06-04T13:40:00Z  ESTIMATE - Euro Area Retail Trade                                                        EU       af-event-49985@ntkn.com  anna.uvarova
+99          2018-06-04T20:15:00Z  ESTIMATE - ISM Non-Manufacturing                                                         US       af-event-46201@ntkn.com  kevin.kastner
+31          2018-06-04T20:15:00Z  ESTIMATE - Redbook Retail Sales Index                                                    US       af-event-46379@ntkn.com  kevin.kastner
+107         2018-06-04T20:15:00Z  ESTIMATE - IBD/TIPP Optimism Index                                                       US       af-event-48116@ntkn.com  kevin.kastner
+134         2018-06-04T20:15:00Z  ESTIMATE - Job Openings and Labor Turnover Survey (Openings Level)                       US       af-event-48285@ntkn.com  kevin.kastner
+135         2018-06-04T20:15:00Z  ESTIMATE - Job Openings and Labor Turnover Survey (Quits Rate)                           US       af-event-48309@ntkn.com  kevin.kastner
+40012       2018-06-04T20:15:00Z  ESTIMATE - Labour Productivity and Costs                                                 CA       af-event-49106@ntkn.com  yali.ndiaye
+106         2018-06-05T20:15:00Z  ESTIMATE - MBA Weekly Applications Index                                                 US       af-event-46483@ntkn.com  kevin.kastner
+138         2018-06-05T20:15:00Z  ESTIMATE - US DOE Refinery Utilization and Petroleum Stocks                              US       af-event-46652@ntkn.com  kevin.kastner
+121         2018-06-05T20:15:00Z  ESTIMATE - Final Non-Farm Productivity                                                   US       af-event-47331@ntkn.com  kevin.kastner
+39          2018-06-05T20:15:00Z  ESTIMATE - Trade Balance                                                                 US       af-event-47345@ntkn.com  kevin.kastner
+40001       2018-06-05T20:15:00Z  ESTIMATE - Building Permits                                                              CA       af-event-48835@ntkn.com  yali.ndiaye
+40009       2018-06-05T20:15:00Z  ESTIMATE - International Merchandise Trade (Trade Balance)                               CA       af-event-48956@ntkn.com  yali.ndiaye
+21606       2018-06-05T20:15:00Z  ESTIMATE - CH CPI                                                                        CH       af-event-49993@ntkn.com  anna.uvarova
+40          2018-06-06T20:15:00Z  ESTIMATE - Initial Jobless Claims                                                        US       af-event-46275@ntkn.com  kevin.kastner
+89          2018-06-06T20:15:00Z  ESTIMATE - US DOE Natural Gas Stocks                                                     US       af-event-46756@ntkn.com  kevin.kastner
+44          2018-06-06T20:15:00Z  ESTIMATE - Consumer Credit month over month                                              US       af-event-47676@ntkn.com  kevin.kastner
+21605       2018-06-06T20:15:00Z  ESTIMATE - CH Unemployment                                                               CH       af-event-49996@ntkn.com  anna.uvarova
+20039       2018-06-07T13:40:00Z  ESTIMATE - Bank of England/TNS Inflation Attitudes Survey                                UK       af-event-49264@ntkn.com  les.commons
+43          2018-06-07T20:15:00Z  ESTIMATE - Wholesale Trade                                                               US       af-event-47552@ntkn.com  kevin.kastner
+40006       2018-06-07T20:15:00Z  ESTIMATE - Housing Starts – CMHC (Canadian Mortgage and Housing Corp)                    CA       af-event-48476@ntkn.com  yali.ndiaye
+40002       2018-06-07T20:15:00Z  ESTIMATE - Capacity Utilization                                                          CA       af-event-49026@ntkn.com  yali.ndiaye
+40009       2018-06-07T20:15:00Z  ESTIMATE - International Merchandise Trade (Trade Balance)                               CA       af-event-49086@ntkn.com  yali.ndiaye
+40011       2018-06-07T20:15:00Z  ESTIMATE - Labour Force Survey                                                           CA       af-event-49785@ntkn.com  yali.ndiaye
+20052       2018-06-08T13:40:00Z  ESTIMATE - UK Quarterly Construction Output                                              UK       af-event-49623@ntkn.com  les.commons
+20009       2018-06-08T13:40:00Z  ESTIMATE - UK Industrial Production                                                      UK       af-event-49627@ntkn.com  les.commons
+20004       2018-06-11T13:40:00Z  ESTIMATE - UK Labour Report                                                              UK       af-event-49413@ntkn.com  les.commons
+20008       2018-06-11T13:40:00Z  ESTIMATE - UK Trade Balance                                                              UK       af-event-49629@ntkn.com  les.commons
+31          2018-06-11T20:15:00Z  ESTIMATE - Redbook Retail Sales Index                                                    US       af-event-46381@ntkn.com  kevin.kastner
+32          2018-06-11T20:15:00Z  ESTIMATE - Consumer Price Index - CPI                                                    US       af-event-47299@ntkn.com  kevin.kastner
+144         2018-06-11T20:15:00Z  ESTIMATE - USDA Crop Estimates - WASDE                                                   US       af-event-47422@ntkn.com  kevin.kastner
+113         2018-06-11T20:15:00Z  ESTIMATE - NFIB Small Business Optimism Index                                            US       af-event-47947@ntkn.com  kevin.kastner
+38          2018-06-11T20:15:00Z  ESTIMATE - Treasury Budget                                                               US       af-event-48565@ntkn.com  kevin.kastner
+20003       2018-06-12T13:40:00Z  ESTIMATE - UK Producer Prices                                                            UK       af-event-49417@ntkn.com  les.commons
+20001       2018-06-12T13:40:00Z  ESTIMATE - Consumer Price Index - CPI                                                    UK       af-event-49415@ntkn.com  les.commons
+106         2018-06-12T20:15:00Z  ESTIMATE - MBA Weekly Applications Index                                                 US       af-event-46485@ntkn.com  kevin.kastner
+138         2018-06-12T20:15:00Z  ESTIMATE - US DOE Refinery Utilization and Petroleum Stocks                              US       af-event-46654@ntkn.com  kevin.kastner
+36          2018-06-12T20:15:00Z  ESTIMATE - Producer Price Index - PPI                                                    US       af-event-47275@ntkn.com  kevin.kastner
+7005        2018-06-13T08:10:00Z  ESTIMATE - Fixed-Asset Investment                                                        CN       af-event-48691@ntkn.com  flora.guo
+7002        2018-06-13T08:10:00Z  ESTIMATE - Industrial Output                                                             CN       af-event-48711@ntkn.com  flora.guo
+7003        2018-06-13T08:10:00Z  ESTIMATE - Retail Sales                                                                  CN       af-event-48731@ntkn.com  flora.guo
+20021       2018-06-13T13:40:00Z  ESTIMATE - UK Retail Sales                                                               UK       af-event-49282@ntkn.com  les.commons
+40          2018-06-13T20:15:00Z  ESTIMATE - Initial Jobless Claims                                                        US       af-event-46277@ntkn.com  kevin.kastner
+89          2018-06-13T20:15:00Z  ESTIMATE - US DOE Natural Gas Stocks                                                     US       af-event-46758@ntkn.com  kevin.kastner
+41          2018-06-13T20:15:00Z  ESTIMATE - Import Export                                                                 US       af-event-47251@ntkn.com  kevin.kastner
+37          2018-06-13T20:15:00Z  ESTIMATE - Retail Sales                                                                  US       af-event-47452@ntkn.com  kevin.kastner
+35          2018-06-13T20:15:00Z  ESTIMATE - Business Inventories month on month                                           US       af-event-47576@ntkn.com  kevin.kastner
+40015       2018-06-13T20:15:00Z  ESTIMATE - New Housing Price Index                                                       CA       af-event-49142@ntkn.com  yali.ndiaye
+30          2018-06-14T20:15:00Z  ESTIMATE - Treasury International Capital Data - TIC Flows                               US       af-event-46594@ntkn.com  kevin.kastner
+33          2018-06-14T20:15:00Z  ESTIMATE - Industrial Production and Capacity Utilization                                US       af-event-47652@ntkn.com  kevin.kastner
+34          2018-06-14T20:15:00Z  ESTIMATE - Empire State Manufacturing Survey                                             US       af-event-48092@ntkn.com  kevin.kastner
+40023       2018-06-14T20:15:00Z  ESTIMATE - Home Sales – CREA (Canadian real estate association)                          CA       af-event-48498@ntkn.com  yali.ndiaye
+40010       2018-06-14T20:15:00Z  ESTIMATE - International Canadian Transaction in Securities                              CA       af-event-48932@ntkn.com  yali.ndiaye
+40014       2018-06-14T20:15:00Z  ESTIMATE - Monthly Survey of Manufacturing                                               CA       af-event-49118@ntkn.com  yali.ndiaye
+95          2018-06-15T20:15:00Z  ESTIMATE - NAHB Home Builder Confidence                                                  US       af-event-48438@ntkn.com  kevin.kastner
+31          2018-06-18T20:15:00Z  ESTIMATE - Redbook Retail Sales Index                                                    US       af-event-46383@ntkn.com  kevin.kastner
+55          2018-06-18T20:15:00Z  ESTIMATE - Housing Starts and Building Permits                                           US       af-event-47504@ntkn.com  kevin.kastner
+106         2018-06-19T20:15:00Z  ESTIMATE - MBA Weekly Applications Index                                                 US       af-event-46487@ntkn.com  kevin.kastner
+138         2018-06-19T20:15:00Z  ESTIMATE - US DOE Refinery Utilization and Petroleum Stocks                              US       af-event-46656@ntkn.com  kevin.kastner
+105         2018-06-19T20:15:00Z  ESTIMATE - Current Account                                                               US       af-event-47401@ntkn.com  kevin.kastner
+53          2018-06-19T20:15:00Z  ESTIMATE - Existing Home Sales                                                           US       af-event-47826@ntkn.com  kevin.kastner
+20016       2018-06-20T13:40:00Z  ESTIMATE - Bank Of England Interest Rate                                                 UK       af-event-47041@ntkn.com  les.commons
+20036       2018-06-20T13:40:00Z  ESTIMATE - Bank Of England Quantitative Easing                                           UK       af-event-47043@ntkn.com  les.commons
+20007       2018-06-20T13:40:00Z  ESTIMATE - Public Sector Finances                                                        UK       af-event-49284@ntkn.com  les.commons
+111         2018-06-20T20:15:00Z  ESTIMATE - FHFA HPI Monthly                                                              US       af-event-46145@ntkn.com  kevin.kastner
+40          2018-06-20T20:15:00Z  ESTIMATE - Initial Jobless Claims                                                        US       af-event-46279@ntkn.com  kevin.kastner
+89          2018-06-20T20:15:00Z  ESTIMATE - US DOE Natural Gas Stocks                                                     US       af-event-46760@ntkn.com  kevin.kastner
+40001       2018-06-20T20:15:00Z  ESTIMATE - Building Permits                                                              CA       af-event-49180@ntkn.com  yali.ndiaye
+21608       2018-06-20T20:15:00Z  ESTIMATE - Swiss National Bank 3 Month Libor Basis Point change                          CH       af-event-49611@ntkn.com  alina.haag
+21607       2018-06-20T20:15:00Z  ESTIMATE - Swiss National Bank 3 Month Libor Rate Direction                              CH       af-event-49613@ntkn.com  alina.haag
+21609       2018-06-20T20:15:00Z  ESTIMATE - Swiss National Bank 3 Month Libor Rate Range                                  CH       af-event-49615@ntkn.com  alina.haag
+21613       2018-06-20T20:15:00Z  ESTIMATE - Swiss National Bank Interest Rate on Sight Deposit Percentage Point Change    CH       af-event-49617@ntkn.com  alina.haag
+21610       2018-06-20T20:15:00Z  ESTIMATE - Swiss National Bank Interest Rates on Sight Deposits                          CH       af-event-49619@ntkn.com  alina.haag
+21612       2018-06-20T20:15:00Z  ESTIMATE - Swiss National BankInterest Rates on Sight Deposits Rate Level                CH       af-event-49621@ntkn.com  alina.haag
+40001       2018-06-21T20:15:00Z  ESTIMATE - Building Permits                                                              CA       af-event-48978@ntkn.com  yali.ndiaye
+51          2018-06-22T20:15:00Z  ESTIMATE - New Home Sales                                                                US       af-event-47528@ntkn.com  kevin.kastner
+31          2018-06-25T20:15:00Z  ESTIMATE - Redbook Retail Sales Index                                                    US       af-event-46385@ntkn.com  kevin.kastner
+52          2018-06-25T20:15:00Z  ESTIMATE - Consumer Confidence                                                           US       af-event-48163@ntkn.com  kevin.kastner
+106         2018-06-26T20:15:00Z  ESTIMATE - MBA Weekly Applications Index                                                 US       af-event-46489@ntkn.com  kevin.kastner
+138         2018-06-26T20:15:00Z  ESTIMATE - US DOE Refinery Utilization and Petroleum Stocks                              US       af-event-46658@ntkn.com  kevin.kastner
+50          2018-06-26T20:15:00Z  ESTIMATE - Durable Goods Orders                                                          US       af-event-47624@ntkn.com  kevin.kastner
+42          2018-06-26T20:15:00Z  ESTIMATE - Pending Home Sales                                                            US       af-event-47852@ntkn.com  kevin.kastner
+40          2018-06-27T20:15:00Z  ESTIMATE - Initial Jobless Claims                                                        US       af-event-46281@ntkn.com  kevin.kastner
+89          2018-06-27T20:15:00Z  ESTIMATE - US DOE Natural Gas Stocks                                                     US       af-event-46762@ntkn.com  kevin.kastner
+49          2018-06-27T20:15:00Z  ESTIMATE - Gross Domestic Product - GDP                                                  US       af-event-47361@ntkn.com  kevin.kastner
+20015       2018-06-28T13:40:00Z  ESTIMATE - UK Index of Services                                                          UK       af-event-49631@ntkn.com  les.commons
+20011       2018-06-28T13:40:00Z  ESTIMATE - UK GDP Third Estimate                                                         UK       af-event-49633@ntkn.com  les.commons
+20054       2018-06-28T13:40:00Z  ESTIMATE - Quarterly Current Account Balance (stg blns)                                  UK       af-event-49635@ntkn.com  les.commons
+57          2018-06-28T20:15:00Z  ESTIMATE - Personal Income and Consumption (current dollars)                             US       af-event-47385@ntkn.com  kevin.kastner
+124         2018-06-28T20:15:00Z  ESTIMATE - USDA Grain Stock and Acreage Combined                                         US       af-event-47438@ntkn.com  kevin.kastner
+118         2018-06-28T20:15:00Z  ESTIMATE - MNI Chicago Report                                                            US       af-event-48338@ntkn.com  les.commons
+40005       2018-06-28T20:15:00Z  ESTIMATE - Gross Domestic Product by Industry                                            CA       af-event-49377@ntkn.com  yali.ndiaye
+40007       2018-06-28T20:15:00Z  ESTIMATE - Industrial Product and Raw Material Price Index                               CA       af-event-49038@ntkn.com  yali.ndiaye
+40026       2018-06-28T20:15:00Z  ESTIMATE - Principal Field Crop Areas                                                    CA       af-event-49164@ntkn.com  yali.ndiaye
+98          2018-06-29T20:15:00Z  ESTIMATE - ISM Manufacturing                                                             US       af-event-46179@ntkn.com  kevin.kastner
+48          2018-06-29T20:15:00Z  ESTIMATE - Construction Spending month on month                                          US       af-event-47482@ntkn.com  kevin.kastner
